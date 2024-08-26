@@ -1,0 +1,932 @@
+.rows {
+    list-style: none;
+    padding: 7px;
+    padding-top: 0px;
+
+
+}
+
+.rows1 {
+    list-style: none;
+    padding-top: 0px;
+
+
+}
+
+.moveX {
+    animation: moveX 20s linear infinite;
+}
+
+.moveXreverce {
+    animation: moveXreverce 24s linear infinite;
+}
+
+
+
+ul {
+    padding: 0px;
+    padding-top: 0px;
+
+}
+
+.rows>li>img:hover {
+    filter: brightness(1.3) saturate(1.3);
+    opacity: 1;
+    will-change: auto;
+    transition: none;
+}
+
+.rows1>li>img:hover {
+    filter: brightness(1.3) saturate(1.3);
+    opacity: 1;
+    will-change: auto;
+    transition: none;
+}
+
+@keyframes moveX {
+    0% {
+        transform: translateY(-49.7%);
+
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveXreverce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-49.7%);
+    }
+}
+
+@keyframes effect {
+    0% {
+        transition: none;
+    }
+
+    100% {
+        transition: all 4s;
+    }
+}
+
+
+
+.rows>li>img {
+    border-radius: 5%;
+    height: 223px;
+    filter: brightness(1) saturate(1);
+    opacity: 0.5;
+    will-change: auto;
+    transition: filter 8s ease, opacity 4s ease;
+}
+
+.rows1>li>img {
+    border-radius: 5%;
+    height: 223px;
+    filter: brightness(1) saturate(1);
+    opacity: 0.5;
+    will-change: auto;
+    transition: filter 8s ease, opacity 4s ease;
+}
+
+.face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #ffcd00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 70px;
+    background: #b57700;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.5s;
+}
+
+.face:hover::before {
+    top: 210px;
+    width: 150px;
+    height: 20px;
+    background: #b57700;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.eyes {
+    position: relative;
+    top: 211px;
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+    left: 31px;
+}
+
+.eyes .eye {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.container-fluid {
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-color: black;
+
+}
+
+.cont {
+    margin-left: 0px;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.img-li {
+    margin-top: 10px;
+
+    margin-bottom: 10px
+}
+
+.img-li>img {
+    width: 221px;
+    height: auto !important
+}
+
+.panda-container {
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 28%;
+    width: 800px;
+    height: 800px;
+    background-position: 73px -106px;
+    background-image: url(panda.png);
+    background-size: 705px;
+
+}
+
+.gradient {
+    background: #833ab4;
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
+
+}
+
+#Enrol-btn {
+    border: none;
+    color: white;
+    border-radius: 30px;
+    background: #833ab4;
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
+
+}
+
+#Enrol-btn:hover {
+    background: #fcb045 !important;
+    color: #b57700;
+}
+
+.overlay {
+    margin: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.6530987394957983) 50%,
+            rgba(0, 0, 0, 0.07886904761904767) 100%);
+    display: flex;
+}
+
+.video-container {
+    background: linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    padding-top: 5px;
+    /* Adjust this value to change the thickness of the border */
+    padding-bottom: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-left: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-right: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-bottom: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    border-radius: 20px;
+    /* Ensures the container has rounded corners */
+}
+
+
+.trailer-video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    /* This ensures the content inside also has rounded corners */
+    padding: 0;
+    background-color: #fff;
+    /* Background color for the inner content */
+
+}
+
+.trailer-link {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    position: relative;
+    width: 100% !important;
+}
+
+.video-thumbnail-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.trailer-video-thumbnail {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.course-card-container {
+
+    background: linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    padding-top: 5px;
+    /* Adjust this value to change the thickness of the border */
+    padding-bottom: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-left: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-right: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    padding-bottom: 5px !important;
+    /* Adjust this value to change the thickness of the border */
+    border-radius: 20px;
+    /* Ensures the container has rounded corners */
+
+}
+
+
+.course-card-list-group>li {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+}
+
+.course-card-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px !important;
+    background: linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    border: none !important;
+    border-radius: 15px !important;
+}
+
+.course-card-button-text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.accordion {
+    /* border: 1px solid white; */
+    border-radius: 100px !important;
+}
+
+.accordion,
+.accordion-item,
+.accordion-header,
+.accordion-button {
+    background-color: #030a21 !important;
+    border: none !important;
+    color: white !important;
+}
+
+.accordion-button {
+    height: 100px !important;
+    /* border: 1px solid white !important; */
+    font-size: 20px !important;
+    border-bottom: none;
+}
+
+.hero-text-div {
+    text-align: center;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.div-block-18 {
+    display: flex;
+    justify-content: start;
+}
+
+.mentor-achive-container {
+    padding: 10px;
+}
+
+.mentor-achive {
+    background-color: #101323 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 6px;
+}
+
+.mentor-achive>span>i {
+    font-size: 36px;
+}
+
+.enrol-now-card {
+    background: linear-gradient(to top, rgba(131, 58, 180, 0.1), rgba(253, 29, 29, 0.1), rgba(252, 176, 69, 0.1)),
+        linear-gradient(to top, rgba(131, 58, 180, 0.3), rgba(253, 29, 29, 0.1), rgba(252, 176, 69, 0)), linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+    ;
+    background-position: 10px 10px;
+    border: 0.01pt solid #a18585 !important;
+    border-radius: 15px !important;
+    padding: 10px;
+}
+
+.enrol-now-card-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px !important;
+    background: linear-gradient(to right, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+    border: none !important;
+    border-radius: 15px !important;
+}
+
+.enrol-now-card-button-text {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.enrol-now-card-price {
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-weight: 700 !important;
+}
+
+.enrol-now-card-price-discount {
+    text-decoration: line-through;
+
+}
+
+.wht-yu-lern-card {
+    background: #101323 !important;
+}
+
+.comments-card {
+    background-color: #101323 !important;
+    color: white !important;
+    border-radius: 20px !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee736ce8affe5b_angle-down-solid%20(6)%201.svg') !important;
+    transform: rotate(270deg) !important;
+}
+
+.accordion-button::after {
+    transform: rotate(90deg);
+    background-image: url('https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/63c698c294ee736ce8affe5b_angle-down-solid%20(6)%201.svg') !important;
+
+}
+
+.accordion-button:focus {
+    z-index: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+
+    box-shadow: inset 0 0 0 0 !important;
+
+}
+
+.count-box>span {}
+
+#days,
+#seconds,
+#hours,
+#minutes {
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    /* -webkit-text-stroke: white 2px; */
+}
+
+.timer-join-now {
+    font-size: 25px !important;
+    font-weight: 900;
+    background: transparent !important;
+    color: white !important;
+}
+
+/* Extra small devices (phones, 0px and up) */
+@media only screen and (max-width: 575.98px) {
+    .hero-text {
+        font-size: 50px !important;
+        line-height: 50px !important;
+
+
+    }
+
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 26%;
+    }
+
+    .hero-text-div>p {
+        font-size: 15px !important;
+    }
+
+    #Enrol-btn {
+        width: 50% !important;
+        height: 8% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+    .cont {
+        width: 100% !important;
+        zoom: 10px;
+        position: absolute;
+        left: -100px !important;
+    }
+
+    .slide-image {
+        width: 100px !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: 50% 2%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 17% !important;
+        left: 0% !important;
+        gap: 0px;
+    }
+
+    .eye {
+        position: relative;
+        width: 35px !important;
+        height: 35px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 13px;
+        width: 24px !important;
+        height: 24px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .trailer-text,
+    .course-text {
+        font-size: 36px !important;
+    }
+
+    .video-container {
+        padding: 1px !important;
+    }
+
+    .accordion {
+        border-radius: 1px !important;
+    }
+
+    .course-curri-card-text {
+        font-size: 36px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .enrol-now-card-price {
+        font-size: 36px !important;
+    }
+
+    .wht-yu-get-text {
+        font-size: 36px !important;
+    }
+
+    .meet-mentor-text {
+        font-size: 36px !important;
+    }
+
+    .enrol-now-text {
+        font-size: 36px !important;
+    }
+
+    .comments-text,
+    .faq-text {
+        font-size: 36px !important;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+    .hero-container {
+        height: 700px !important;
+    }
+
+    .hero-text {
+        font-size: 50px !important;
+        line-height: 50px !important;
+
+
+    }
+
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 26%;
+    }
+
+    .hero-text-div>p {
+        font-size: 15px !important;
+    }
+
+    #Enrol-btn {
+        width: 50% !important;
+        height: 8% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+    .cont {
+        width: 100% !important;
+        zoom: 10px;
+        position: absolute;
+        left: -100px !important;
+    }
+
+    .slide-image {
+        width: 100px !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: 50% 2%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 17% !important;
+        left: 0% !important;
+        gap: 0px;
+    }
+
+    .eye {
+        position: relative;
+        width: 35px !important;
+        height: 35px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 13px;
+        width: 24px !important;
+        height: 24px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
+    .hero-container {
+        height: 100% !important;
+    }
+
+    .hero-text {
+        font-size: 100px !important;
+        line-height: 100px !important;
+
+
+    }
+
+    .course-curri-card-text {
+        font-size: 25px !important;
+        margin-bottom: 10px !important;
+    }
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 36%;
+    }
+
+    .hero-text-div>p {
+        font-size: 20px !important;
+    }
+
+    #Enrol-btn {
+        width: 50% !important;
+        height: 8% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+    
+
+    .slide-image {
+        width: 100% !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: 50% -41%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 23% !important;
+        left: 0% !important;
+        gap: 33px;
+    }
+
+    .eye {
+        position: relative;
+        width: 57px !important;
+        height: 57px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: 35px !important;
+        height: 35px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .list-group-item{
+        font-size: 15px !important;
+    }
+    .course-card-button>span{
+        font-size: 15px !important;
+    }
+
+}
