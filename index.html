@@ -29,6 +29,12 @@
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   </head>
   <body style="margin: 0px; padding: 0px">
+    <div id="preloader">
+      <img src="panda-waving-cartoon-sticker-pi4qfklzce0s7zo5.gif" alt="Loading...">
+    </div>
+
+
+
     <!-- hero -->
     <div class="container-fluid hero-container" style="height: 100vh">
       <div class="cont">
@@ -1392,6 +1398,13 @@ function eyeball(pageX, pageY) {
      const rzp = new Razorpay(options);
      rzp.open();
    }
+   window.addEventListener('load', function() {
+  // Hide preloader
+  document.getElementById('preloader').style.display = 'none';
+  
+  // Show main content
+  document.querySelector('.content').style.display = 'block';
+});
  </script>
 
 
