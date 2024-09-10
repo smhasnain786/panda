@@ -643,6 +643,13 @@ ul {
 
     }
 
+    .thankYouText {
+        font-size: 62px !important;
+    }
+    .thanks-para{
+        font-size: 11px;
+    }
+
     .hero-text-div {
         position: absolute;
         /* top: 60% !important; */
