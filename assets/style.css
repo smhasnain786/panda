@@ -5,56 +5,64 @@
 
 
 }
+
 :root {
-	--radius: 12vmin;
-	--frame-size: calc(var(--radius) / 3);
-	--d-outer: calc(var(--radius) * 2);
-	--d-inner: calc(var(--d-outer) - var(--frame-size));
-	--font-size: calc(var(--radius) / 10);
+    --radius: 12vmin;
+    --frame-size: calc(var(--radius) / 3);
+    --d-outer: calc(var(--radius) * 2);
+    --d-inner: calc(var(--d-outer) - var(--frame-size));
+    --font-size: calc(var(--radius) / 10);
 }
+
 .circle {
-	position: fixed;
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 100px;
-    left: 90px;
+    right: 90px;
     z-index: 2;
 }
+
 .logo {
-	position: absolute;
-	width: 130px;
-	height: 130px;
-	background-image: url(https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj) !important;
-	background-size: cover;
-	border-radius: 50%;
-	filter: contrast(1.5);
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-image: url(https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj) !important;
+    background-size: cover;
+    border-radius: 50%;
+    filter: contrast(1.5);
 }
+
 .text {
-	position: absolute;
+    /* position: absolute;
 	width: var(--d-outer);
 	height:var(--d-outer);
-    color: #ffffff;
-	animation: rotateText 40s linear infinite;
-    font-size: 15px;
+    color: #ffffff; */
+    animation: rotateText 40s linear infinite;
+    /* font-size: 15px; */
 }
+
 @keyframes rotateText {
-	0% {
-		transform: rotate(360deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
+
 .text p span {
-	position: absolute;
-	left: 50%;
-	font-size: 1.2em;
-	transform-origin: 0 var(--radius);
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 var(--radius);
 }
+
 .strip-container {
 
     color: #ffffff;
@@ -87,6 +95,7 @@
 .moveY {
     animation: moveY 26s linear infinite;
 }
+
 #preloader {
     position: fixed;
     left: 0;
@@ -845,16 +854,20 @@ ul {
     }
 
     .course-curri-card-text {
-        font-size: 36px !important;
+        font-size: 30px !important;
         margin-bottom: 10px !important;
     }
 
     .enrol-now-card-price {
-        font-size: 36px !important;
+        font-size: 40px !important;
+    }
+
+    .enrol-now-card-price-discount {
+        font-size: 30px !important;
     }
 
     .wht-yu-get-text {
-        font-size: 36px !important;
+        font-size: 35px !important;
     }
 
     .meet-mentor-text {
@@ -869,6 +882,7 @@ ul {
     .faq-text {
         font-size: 36px !important;
     }
+
     .circle {
         position: fixed;
         width: 100px;
@@ -878,9 +892,10 @@ ul {
         justify-content: center;
         align-items: center;
         bottom: 100px;
-        left: 20px;
+        right: 5px;
         z-index: 2;
     }
+
     .logo {
         position: absolute;
         width: 60px;
@@ -890,14 +905,48 @@ ul {
         border-radius: 50%;
         filter: contrast(1.5);
     }
+
     .text {
         position: absolute;
         width: var(--d-outer);
-        height:var(--d-outer);
+        height: var(--d-outer);
         color: #ffffff;
         animation: rotateText 40s linear infinite;
-        font-size:6px;
+        font-size: 6px;
     }
+
+    .strip-container>ul>li {
+        font-size: 15px !important;
+    }
+
+    .strip-container {
+        height: 30px !important;
+    }
+
+    .about-us-text>p {
+        font-size: 15px !important;
+    }
+
+    .mentor-container>div,
+    .enrol-container>div {
+        margin: 0px !important;
+    }
+
+    .wht-yu-lern-card-p {
+        font-size: 13px !important;
+    }
+
+    .collapseSIX,
+    .collapseFive,
+    .collapseFour,
+    .collapseThree,
+    .collapseTwo,
+    .collapseOne {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1008,6 +1057,8 @@ ul {
         font-size: 62px !important;
     }
 
+
+
     .thanks-para {
         font-size: 11px;
     }
@@ -1028,8 +1079,16 @@ ul {
     }
 
     #Enrol-btn {
-        width: 50% !important;
-        height: 8% !important;
+        width: 30% !important;
+        height: 5% !important;
+    }
+
+    .course-card-list-group {
+        font-size: 13px !important;
+    }
+
+    .what-y-get {
+        font-size: 20px !important;
     }
 
     .overlay {
@@ -1106,12 +1165,40 @@ ul {
     }
 
     .course-curri-card-text {
-        font-size: 36px !important;
+        font-size: 23px !important;
         margin-bottom: 10px !important;
     }
 
+    .collapseSIX,
+    .collapseFive,
+    .collapseFour,
+    .collapseThree,
+    .collapseTwo,
+    .collapseOne {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px !important;
+    }
+
+    .about-us-text>p {
+        font-size: 13px !important;
+    }
+
+    .course-card-container {
+        max-height: 615px !important;
+    }
+
+    .row-whatget {
+        justify-content: none !important;
+    }
+
     .enrol-now-card-price {
-        font-size: 36px !important;
+        font-size: 46px !important;
+    }
+
+    .enrol-now-card-price-discount {
+        font-size: 30px !important;
     }
 
     .wht-yu-get-text {
