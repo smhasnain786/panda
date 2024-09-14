@@ -5,7 +5,88 @@
 
 
 }
+:root {
+	--radius: 12vmin;
+	--frame-size: calc(var(--radius) / 3);
+	--d-outer: calc(var(--radius) * 2);
+	--d-inner: calc(var(--d-outer) - var(--frame-size));
+	--font-size: calc(var(--radius) / 10);
+}
+.circle {
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    bottom: 100px;
+    left: 90px;
+    z-index: 2;
+}
+.logo {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background-image: url(https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj) !important;
+	background-size: cover;
+	border-radius: 50%;
+	filter: contrast(1.5);
+}
+.text {
+	position: absolute;
+	width: var(--d-outer);
+	height:var(--d-outer);
+    color: #ffffff;
+	animation: rotateText 40s linear infinite;
+    font-size: 15px;
+}
+@keyframes rotateText {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+.text p span {
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 var(--radius);
+}
+.strip-container {
 
+    color: #ffffff;
+    padding: 20px 0;
+    height: 50px;
+}
+
+.strip-container ul {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    width: fit-content;
+}
+
+.strip-container li {
+    margin-right: 40px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.strip-container li i {
+    color: #f0c22d;
+    margin-right: 5px;
+}
+
+.moveY {
+    animation: moveY 26s linear infinite;
+}
 #preloader {
     position: fixed;
     left: 0;
@@ -35,6 +116,7 @@
     animation: moveX 20s linear infinite;
 }
 
+
 .moveXreverce {
     animation: moveXreverce 24s linear infinite;
 }
@@ -60,11 +142,13 @@ ul {
     will-change: auto;
     transition: none;
 }
-.coursecurriculum_body-wrap>ol>li{
+
+.coursecurriculum_body-wrap>ol>li {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
 @keyframes moveX {
     0% {
         transform: translateY(-49.7%);
@@ -73,6 +157,17 @@ ul {
 
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes moveY {
+    0% {
+        transform: translateX(-49.7%);
+
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -651,7 +746,8 @@ ul {
     .thankYouText {
         font-size: 62px !important;
     }
-    .thanks-para{
+
+    .thanks-para {
         font-size: 11px;
     }
 
@@ -773,7 +869,35 @@ ul {
     .faq-text {
         font-size: 36px !important;
     }
-
+    .circle {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 100px;
+        left: 20px;
+        z-index: 2;
+    }
+    .logo {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-image: url(https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj) !important;
+        background-size: cover;
+        border-radius: 50%;
+        filter: contrast(1.5);
+    }
+    .text {
+        position: absolute;
+        width: var(--d-outer);
+        height:var(--d-outer);
+        color: #ffffff;
+        animation: rotateText 40s linear infinite;
+        font-size:6px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -883,7 +1007,8 @@ ul {
     .thankYouText {
         font-size: 62px !important;
     }
-    .thanks-para{
+
+    .thanks-para {
         font-size: 11px;
     }
 
