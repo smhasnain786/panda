@@ -1186,7 +1186,7 @@ ul {
     }
 
     .course-card-container {
-        max-height: 615px !important;
+        max-height: 632px !important;
     }
 
     .row-whatget {
@@ -1211,6 +1211,14 @@ ul {
 
     .enrol-now-text {
         font-size: 36px !important;
+    }
+
+    .wht-yu-lern-card-heading {
+        font-size: 13px !important;
+    }
+
+    .wht-yu-lern-card-p {
+        font-size: 13px !important;
     }
 
     .comments-text,
