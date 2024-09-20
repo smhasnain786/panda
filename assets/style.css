@@ -465,12 +465,19 @@ ul {
     background: #833ab4;
     background: linear-gradient(to right,
             #833ab4, #fd1d1d, #fcb045);
+    pointer-events: all;
 
 }
 
 #Enrol-btn:hover {
-    background: #fcb045 !important;
-    color: #b57700;
+    background:linear-gradient(to right,
+    #72329d, #d41919, #d3943b) !important;
+    color: #ffffff;
+    cursor: pointer !important;
+}
+
+.Enrol-btn:hover {
+    cursor: pointer !important;
 }
 
 .overlay {
@@ -555,6 +562,12 @@ ul {
     justify-content: center;
     pointer-events: none;
 }
+.play-button:hover {
+    background:linear-gradient(to right,
+    #72329d, #d41919, #d3943b) !important;
+    color: #ffffff;
+    cursor: pointer !important;
+}
 
 .play-button::before {
     content: '';
@@ -599,10 +612,17 @@ ul {
     border: none !important;
     border-radius: 15px !important;
 }
+.course-card-button:hover {
+    background:linear-gradient(to right,
+    #72329d, #d41919, #d3943b) !important;
+    color: #ffffff;
+    cursor: pointer !important;
+}
 
 .course-card-button-text {
     font-size: 30px;
     font-weight: 700;
+    
 }
 
 .accordion {
@@ -677,6 +697,12 @@ ul {
     border: none !important;
     border-radius: 15px !important;
 }
+.enrol-now-card-button:hover {
+    background:linear-gradient(to right,
+    #72329d, #d41919, #d3943b) !important;
+    color: #ffffff;
+    cursor: pointer !important;
+}
 
 .enrol-now-card-button-text {
     font-size: 30px;
@@ -746,6 +772,14 @@ ul {
     font-weight: 900;
     background: transparent !important;
     color: white !important;
+}
+.timer-join-now:hover {
+    background-color: white !important;
+    color: #FF5733 !important; /* Set this to the background color you want when text turns transparent */
+    border-color: white !important;
+    
+    cursor: pointer;
+   
 }
 
 /* Extra small devices (phones, 0px and up) */
