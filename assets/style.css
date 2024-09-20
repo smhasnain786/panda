@@ -5,7 +5,10 @@
 
 
 }
-
+.fancybox__content{
+    width: 100% !important;
+    height: auto !important;
+}
 :root {
     --radius: 12vmin;
     --frame-size: calc(var(--radius) / 3);
