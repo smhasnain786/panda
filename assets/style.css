@@ -5,10 +5,12 @@
 
 
 }
-.fancybox__content{
+
+.fancybox__content {
     width: 100% !important;
     height: auto !important;
 }
+
 :root {
     --radius: 12vmin;
     --frame-size: calc(var(--radius) / 3);
@@ -755,6 +757,11 @@ ul {
 
     }
 
+    .text {
+        height: 86px !important;
+        width: 86px !important;
+    }
+
     .thankYouText {
         font-size: 62px !important;
     }
@@ -959,9 +966,7 @@ ul {
         height: 700px !important;
     }
 
-    .text {
-        
-    }
+    .text {}
 
     .hero-text {
         font-size: 50px !important;
