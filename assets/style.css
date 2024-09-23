@@ -1340,6 +1340,9 @@ ul {
 
 
     }
+    .course-card-container{
+        max-height: 645px !important;
+    }
 
     .course-curri-card-text {
         font-size: 25px !important;

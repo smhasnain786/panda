@@ -1583,7 +1583,16 @@ let anim = setInterval(() => {
    
     });
 
+    const loadedVideos = new Set();
 
+document.querySelectorAll('video').forEach(video => {
+  video.onloadeddata = () => {
+    if (!loadedVideos.has(video.currentSrc)) {
+      video.play();  // Play only if it's not already loaded
+      loadedVideos.add(video.currentSrc);
+    }
+  };
+});
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
       // Your custom options
