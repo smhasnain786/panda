@@ -1507,109 +1507,95 @@
     </div>
   </div>
 
-  <script>
-
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  const content = document.querySelector('.content');
-
-  // Mark the time the page has loaded
-  const pageLoadedAt = performance.now();
-
-  // Ensure at least 1 second (1000 ms) passes before hiding the loader
-  const displayDuration = 1000; // 1 second
-
-  // Calculate how long to wait after the page loads
-  const timeSincePageLoad = performance.now() - pageLoadedAt;
-  const remainingTime = Math.max(displayDuration - timeSincePageLoad, 0);
-
-  // Ensure the loader is shown for at least 1 second
-  setTimeout(() => {
-    if (preloader) preloader.style.display = 'none';
-    if (content) content.style.display = 'block';
-  }, remainingTime);
-});
-
-
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  
   <script>
+  // Preloader
+  window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      const content = document.querySelector('.content');
 
-    Fancybox.bind("[data-fancybox]", {
+      setTimeout(() => {
+          if (preloader) preloader.style.display = 'none';
+          if (content) content.style.display = 'block';
+      }, 1000);
+  });
+
+  // Fancybox
+  Fancybox.bind("[data-fancybox]", {
       // Your custom options
-    });
-  </script>
-  <script>
-    document.querySelector("body").addEventListener("mousemove", function (event) {
+  });
+
+  // Eyeball animation
+  document.addEventListener("mousemove", function (event) {
       eyeball(event.pageX, event.pageY);
-    });
+  });
 
-    document.querySelector("body").addEventListener("touchmove", function (event) {
+  document.addEventListener("touchmove", function (event) {
       eyeball(event.touches[0].pageX, event.touches[0].pageY);
-    });
+  });
 
-    function eyeball(pageX, pageY) {
-      var eye = document.querySelectorAll(".eye");
-      eye.forEach(function (eye) {
-        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-        let radian = Math.atan2(pageX - x, pageY - y);
-        let rot = radian * (180 / Math.PI) * -1 + 270;
-        eye.style.transform = "rotate(" + rot + "deg)";
+  function eyeball(pageX, pageY) {
+      var eyes = document.querySelectorAll(".eye");
+      eyes.forEach(function (eye) {
+          let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+          let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+          let radian = Math.atan2(pageX - x, pageY - y);
+          let rot = radian * (180 / Math.PI) * -1 + 270;
+          eye.style.transform = "rotate(" + rot + "deg)";
       });
+
       const text = document.querySelector(".text p");
+      if (text) {
+          text.innerHTML = text.innerText
+              .split("")
+              .map(
+                  (char, i) => `<span style="transform:rotate(${i * 5.8}deg)">${char}</span>`
+              )
+              .join("");
+      }
+  }
 
-      text.innerHTML = text.innerText
-        .split("")
-        .map(
-          (char, i) => `<span style="transform:rotate(${i * 5.8}deg)">${char}</span>`
-        )
-        .join("");
-
-    }
-
-  </script>
-  <script>
-    $(document).ready(function () {
+  // Slick slider
+  $(document).ready(function () {
       $('.your-class').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-
-        ]
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      infinite: true,
+                      dots: true
+                  }
+              },
+              {
+                  breakpoint: 600,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+          ]
       });
-    });
+  });
 
-    // Countdown timer logic
-    function startCountdown() {
+  // Countdown timer logic
+  function startCountdown() {
       // Set the target date and time for the first countdown to October 1st, 5:00 PM
       const countdownTarget1 = new Date("October 1, 2024 17:00:00").getTime();
 
@@ -1617,62 +1603,43 @@ window.addEventListener('load', () => {
       const countdownTarget2 = new Date("October 1, 2024 17:00:00").getTime();
 
       const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
+          const now = new Date().getTime();
 
-        // Countdown 1
-        const timeRemaining1 = countdownTarget1 - now;
-        const days1 = Math.floor(timeRemaining1 / (1000 * 60 * 60 * 24));
-        const hours1 = Math.floor((timeRemaining1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes1 = Math.floor((timeRemaining1 % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds1 = Math.floor((timeRemaining1 % (1000 * 60)) / 1000);
+          // Countdown 1
+          updateCountdown(countdownTarget1, '.days1', '.hours1', '.minutes1', '.seconds1');
 
-        document.querySelector('.days1').innerText = days1;
-        document.querySelector('.hours1').innerText = hours1;
-        document.querySelector('.minutes1').innerText = minutes1;
-        document.querySelector('.seconds1').innerText = seconds1;
-
-        // Stop the first countdown when complete
-        if (timeRemaining1 < 0) {
-          clearInterval(countdownInterval);
-          document.querySelector('.days1').innerText = "0";
-          document.querySelector('.hours1').innerText = "0";
-          document.querySelector('.minutes1').innerText = "0";
-          document.querySelector('.seconds1').innerText = "0";
-          document.querySelector('.d-flex').innerText = "Offer Expired";
-        }
-
-        // Countdown 2
-        const timeRemaining2 = countdownTarget2 - now;
-        const days2 = Math.floor(timeRemaining2 / (1000 * 60 * 60 * 24));
-        const hours2 = Math.floor((timeRemaining2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes2 = Math.floor((timeRemaining2 % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds2 = Math.floor((timeRemaining2 % (1000 * 60)) / 1000);
-
-        document.querySelector('.days2').innerText = days2;
-        document.querySelector('.hours2').innerText = hours2;
-        document.querySelector('.minutes2').innerText = minutes2;
-        document.querySelector('.seconds2').innerText = seconds2;
-
-        // Stop the second countdown when complete
-        if (timeRemaining2 < 0) {
-          clearInterval(countdownInterval);
-          document.querySelector('.days2').innerText = "0";
-          document.querySelector('.hours2').innerText = "0";
-          document.querySelector('.minutes2').innerText = "0";
-          document.querySelector('.seconds2').innerText = "0";
-          document.querySelector('.d-flex').innerText = "Offer Expired";
-        }
+          // Countdown 2
+          updateCountdown(countdownTarget2, '.days2', '.hours2', '.minutes2', '.seconds2');
 
       }, 1000);
-    }
-    // Start countdown when the page loads
-    window.onload = startCountdown;
-    // window.onload = startCountdown1;
+  }
+
+  function updateCountdown(targetDate, daysSelector, hoursSelector, minutesSelector, secondsSelector) {
+      const now = new Date().getTime();
+      const timeRemaining = targetDate - now;
+
+      if (timeRemaining < 0) {
+          document.querySelector(daysSelector).innerText = "0";
+          document.querySelector(hoursSelector).innerText = "0";
+          document.querySelector(minutesSelector).innerText = "0";
+          document.querySelector(secondsSelector).innerText = "0";
+          document.querySelector(daysSelector).closest('.countdown-1, .countdown-2').innerHTML = "Offer Expired";
+      } else {
+          const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          document.querySelector(daysSelector).innerText = days;
+          document.querySelector(hoursSelector).innerText = hours;
+          document.querySelector(minutesSelector).innerText = minutes;
+          document.querySelector(secondsSelector).innerText = seconds;
+      }
+  }
+
+  // Start countdown when the page loads
+  window.addEventListener('load', startCountdown);
   </script>
-
-
-
-
 </body>
 
 </html>
