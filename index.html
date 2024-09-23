@@ -1,1262 +1,1169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Panda Skill School</title>
-    <link rel="stylesheet" href="assets/style.css" />
-    <link rel="preload" href="assets/style.css" as="style" onload="this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/style.css"></noscript>
-    <link rel="shortcut icon" href="https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-   
-    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
 
-<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
-  </head>
-  <body style="margin: 0px; padding: 0px">
-    <div id="preloader">
-      <video  style="width: 200px;"   autoplay loop muted>
-        <source src="assets/images/ezgif-2-5566b09878.webm" type="video/webm">
-      </video>
-      
-    </div>
-    <div class="circle" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
-      <div class="logo"></div>
-     
-       <img   style="width: 150px; height: 150px;" class="text" src="assets/images/circle_enroll.webp" alt="">
-     
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div class="container-fluid strip-container gradient ">
-      <ul class="d-flex align-items-center moveY">
-        <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
-        <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
-        <li><i class="fas fa-check-circle"></i>Available in Hinglish</li>
-        <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
-        <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
-        <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
-        <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
-        <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
-        <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
-        <li><i class="fas fa-check-circle"></i>Available in Hinglish</li>
-        <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
-        <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
-        <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
-        <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
+  <title>Panda Skill School</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="shortcut icon"
+    href="https://yt3.googleusercontent.com/ZmN6obor4AZ2BKYnDbQuS-oe8A657rtjY2mEfJ7cviqvpqmRY4VvLSHhNZxCfB2VZ7e1-Ew=s160-c-k-c0x00ffffff-no-rj"
+    type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+</head>
+
+<body style="margin: 0px; padding: 0px">
+  <div id="preloader">
+    <video style="width: 200px;" autoplay loop muted>
+      <source src="assets/images/ezgif-2-5566b09878.webm" type="video/webm">
+    </video>
+
+  </div>
+  <div class="circle" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
+    <div class="logo"></div>
+
+    <img style="width: 150px; height: 150px;" class="text" src="assets/images/circle_enroll.webp" alt="">
+
+  </div>
+
+  <div class="container-fluid strip-container gradient ">
+    <ul class="d-flex align-items-center moveY">
+      <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
+      <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
+      <li><i class="fas fa-check-circle"></i>Available in Hinglish</li>
+      <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
+      <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
+      <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
+      <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
+      <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
+      <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
+      <li><i class="fas fa-check-circle"></i>Available in Hinglish</li>
+      <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
+      <li><i class="fas fa-check-circle"></i>Group Live Q&A Sessions</li>
+      <li><i class="fas fa-check-circle"></i>Virtual Course Community</li>
+      <li><i class="fas fa-check-circle"></i>Limited Amazing Bonus</li>
+    </ul>
+  </div>
+
+
+  <!-- hero -->
+  <div class="container-fluid hero-container" style="height: 100vh">
+
+    <div class="cont">
+      <ul class="rows moveX">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 1.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 2.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 3.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 1.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 2.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 3.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveXreverce">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 4.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 6.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 4.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 6.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveX">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 8.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 9.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 8.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 9.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveXreverce">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 3.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 2.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 3.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 2.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveX">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 5.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveXreverce">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveX">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 4.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 6.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 4.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 7.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 6.webm" type="video/webm">
+          </video>
+        </li>
+
+      </ul>
+      <ul class="rows moveXreverce">
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 11.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 10.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 11.webm" type="video/webm">
+          </video>
+        </li>
+        <li class="img-li">
+
+          <video class="slide-image" autoplay loop muted>
+            <source src="assets/images/gif 12.webm" type="video/webm">
+          </video>
+        </li>
+
       </ul>
     </div>
 
-    
-    <!-- hero -->
-    <div class="container-fluid hero-container" style="height: 100vh">
-      
-      <div class="cont">
-        <ul class="rows moveX">
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 1.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 2.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-          
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 3.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 1.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 2.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-          
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 3.webm" type="video/webm">
-            </video>
-          </li>
-         
-        </ul>
-        <ul class="rows moveXreverce">
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 4.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 6.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 4.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 6.webm" type="video/webm">
-            </video>
-          </li>
-          
-        </ul>
-        <ul class="rows moveX">
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-         
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 8.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 9.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-         
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 8.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 9.webm" type="video/webm">
-            </video>
-          </li>
-        
-        </ul>
-        <ul class="rows moveXreverce">
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 3.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 2.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 3.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 2.webm" type="video/webm">
-            </video>
-          </li>
-         
-        </ul>
-        <ul class="rows moveX">
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 5.webm" type="video/webm">
-            </video>
-          </li>
-        
-        </ul>
-        <ul class="rows moveXreverce">
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-         
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-         
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-         
-        </ul>
-        <ul class="rows moveX">
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 4.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 6.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 4.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 7.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 6.webm" type="video/webm">
-            </video>
-          </li>
-          
-        </ul>
-        <ul class="rows moveXreverce">
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-          
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 11.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-            
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 10.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-          
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 11.webm" type="video/webm">
-            </video>
-          </li>
-          <li class="img-li">
-           
-            <video   class="slide-image" autoplay loop muted>
-              <source src="assets/images/gif 12.webm" type="video/webm">
-            </video>
-          </li>
-          
-        </ul>
-      </div>
+    <div class="panda-container">
+      <div class="face1">
 
-      <div class="panda-container">
-        <div
-          class="face1"
-         
-        >
-          
-            <div class="eyes">
-              <div class="eye" style="transform: rotate(280.621deg)"></div>
-              <div class="eye" style="transform: rotate(313.792deg)"></div>
-            </div>
-          
+        <div class="eyes">
+          <div class="eye" style="transform: rotate(280.621deg)"></div>
+          <div class="eye" style="transform: rotate(313.792deg)"></div>
         </div>
-      </div>
 
-      <div class="overlay">
-        <div class="container text-center" style="height: 100vh">
-          <div
-            class="text-light hero-text-div">
-            <h1
-              class="poppins-bold hero-text"
-              style="font-size: 100px; line-height: 6rem"
-            >
-              Unlock the Secret of
-              <span
-                class="gradient"
-                style="
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div class="container text-center" style="height: 100vh">
+        <div class="text-light hero-text-div">
+          <h1 class="poppins-bold hero-text" style="font-size: 100px; line-height: 6rem">
+            Unlock the Secret of
+            <span class="gradient" style="
                   color: transparent;
                   -webkit-background-clip: text;
                   background-clip: text;
-                "
-                >Reel Editing</span
-              >
-            </h1>
-            <p class="poppins mt-4 hero-para" style="font-size: 20px" id="hero-para">
-              Join Live Workshop and Master the art of reel Editing
-            </p>
-            <p class="poppins mt-4 hero-para" style="font-size: 20px" id="hero-para1">
-              Learn how I edit reels and shorts that got lakhs of views.    All the
-              advance techniques and mindset behind those edits.
-            </p>
-            <div class="mt-5 Enrol-btn-div" id="Enrol-btn-div">
-              <button  type="button" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'"  class="btn btn-primary w-25 h-25 p-3 Enrol-btn"  id="Enrol-btn">
-                ENROLL NOW
+                ">Reel Editing</span>
+          </h1>
+          <p class="poppins mt-4 hero-para" style="font-size: 20px" id="hero-para">
+            Join Live Workshop and Master the art of reel Editing
+          </p>
+          <p class="poppins mt-4 hero-para" style="font-size: 20px" id="hero-para1">
+            Learn how I edit reels and shorts that got lakhs of views. All the
+            advance techniques and mindset behind those edits.
+          </p>
+          <div class="mt-5 Enrol-btn-div" id="Enrol-btn-div">
+            <button type="button" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'"
+              class="btn btn-primary w-25 h-25 p-3 Enrol-btn" id="Enrol-btn">
+              ENROLL NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- her-end -->
+
+  <!-- trailer -->
+  <div class="container-fluid">
+    <div class="container mt-4 mb-4">
+      <h1 class="text-light text-center trailer-text" style="font-size: 60px">
+        Watch Trailer
+      </h1>
+      <div class="row my-5">
+        <div class="col-sm-12 video-container" style="position: relative">
+          <a data-fancybox href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="trailer-link">
+            <div class="video-thumbnail-wrapper">
+              <img class="trailer-video" src="assets/images/thumbnailforwebsit (1).webp" alt="Video Thumbnail"
+                class="trailer-video-thumbnail" />
+              <div class="play-button"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trailer-end -->
+
+  <!-- what wiil you learn -->
+  <div class="container-fluid">
+    <div class="container mt-5 mb-5">
+      <h1 class="text-light text-center mb-5 course-text" style="font-size: 60px">
+        Course curriculum
+      </h1>
+      <div class="row mt-5 d-flex justify-content-around">
+        <div class="col-sm-6 mt-3">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapseOne" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  Module 01 - The Art of Professionalism
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+                    <ol>
+                      <li> Common mistakes as a beginner
+
+                      </li>
+                      <li>
+                        Text, color and placement
+
+                      </li>
+                      <li>
+                        Design skill (Aware of the Danger zone)
+
+                      </li>
+                      <li>
+                        Cause of the element placement
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseTwo" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Module 02 - The Science of Hook Editing
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="coursecurriculum_body-wrap">
+                    <ol>
+                      <li> Types of Hook (Visual Hook, Sound Hook and Text hook)</li>
+                      <li>Components of hook</li>
+                      <li>Practical Implementation
+                      </li>
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseThree" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Module 03 - 1st Live Practice Session (Documentry Type)
+
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+                    <ol>
+                      <li> 1 reel from scratch to the final output
+                      </li>
+                      <li>QnA session ( All about premiere pro issues and editing issues)
+                      </li>
+
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseFour" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Module 04 - 2nd Live Practice Session (Podcast Edit)
+
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+                    <ol>
+                      <li> 1 reel from scratch to the final output
+
+                      </li>
+                      <li>QnA session ( All about premiere pro issues and editing issues)
+                      </li>
+
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseFive" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  Module 05 - 3rd Live Practice Session
+
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+                    <ol>
+                      <li> 1 reel from scratch to the final output
+
+                      </li>
+                      <li>QnA session ( All about premiere pro issues and editing issues)
+                      </li>
+
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseSIX" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSIX" aria-expanded="false"
+                  aria-controls="collapseSIX">
+                  Module 06 - Master the art of copying
+
+                </button>
+              </h2>
+              <div id="collapseSIX" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-bold text-light collapsed collapseSIX" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSIX" aria-expanded="false"
+                  aria-controls="collapseSIX">
+                  Module 07 - Get clients with my methods
+
+                </button>
+              </h2>
+              <div id="collapseSIX" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div class="coursecurriculum_body-wrap">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 mt-3 course-card-container" style="max-height: 800px;">
+          <div class="card" style="
+                border-radius: 20px;
+                background-color: #101323;
+                color: white;
+              ">
+            <div class="card-body">
+              <img style="width: 100%; border-radius: 20px" src="assets/images/thumbnailforwebsit (1).webp" alt="" />
+              <h1 class="poppins-bold course-curri-card-text" style="font-size: 50px; margin-top: 10px">
+                Unlock the Secret of
+                <span class="gradient" style="
+                      color: transparent;
+                      -webkit-background-clip: text;
+                      background-clip: text;
+                    ">Reel Editing</span>
+              </h1>
+              <p class="poppins-bold">Instructed by Panda</p>
+              <ul class="list-group list-group-flush course-card-list-group">
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="text-danger mr-2 fas fa-check-circle"></i>
+                  <span class="poppins-semibold mx-3">Easy payment method</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="text-danger mr-2 fas fa-check-circle"></i>
+                  <span class="poppins-semibold mx-3">Lifetime Access of the Course</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="text-danger mr-2 fas fa-check-circle"></i>
+                  <span class="poppins-semibold mx-3">Learn Live and clear all Doubts</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="text-danger mr-2 fas fa-check-circle"></i>
+                  <span class="poppins-semibold mx-3">Guaranteed Best Pricing from the Market</span>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <i class="text-danger mr-2 fas fa-check-circle"></i>
+                  <span class="poppins-semibold mx-3">24/7 Instant Email Support</span>
+                </li>
+              </ul>
+              <button class="btn btn-primary course-card-button rzp-button1"
+                onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
+                <span class="poppins-bold course-card-button-text">
+                  Enroll Now
+                </span>
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- her-end -->
+  </div>
+  <!-- end -->
 
-    <!-- trailer -->
-    <div class="container-fluid" >
-      <div class="container mt-4 mb-4">
-        <h1 class="text-light text-center trailer-text" style="font-size: 60px">
-          Watch Trailer
-        </h1>
-        <div class="row my-5">
-          <div class="col-sm-12 video-container" style="position: relative">
-            <a
-              data-fancybox
-              href="https://www.youtube.com/watch?v=ScMzIvxBSi4"
-              class="trailer-link"
-            >
-              <div class="video-thumbnail-wrapper">
-                <img
-                  class="trailer-video"
-                  src="assets/images/thumbnailforwebsit (1).webp"
-                  alt="Video Thumbnail"
-                  class="trailer-video-thumbnail"
-                />
-                <div class="play-button"></div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- trailer-end -->
+  <!-- slick slider -->
 
-    <!-- what wiil you learn -->
-    <div class="container-fluid">
-      <div class="container mt-5 mb-5">
-        <h1 class="text-light text-center mb-5 course-text" style="font-size: 60px">
-          Course curriculum
-        </h1>
-        <div class="row mt-5 d-flex justify-content-around">
-          <div class="col-sm-6 mt-3">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapseOne"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                  Module 01 - The Art of Professionalism
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    
-                    <div class="coursecurriculum_body-wrap">
-                      <ol>
-                        <li>  Common mistakes as a beginner
-                          
-                      </li>
-                      <li>
-                        Text, color and placement
-                        
-                      </li>
-                      <li>
-                        Design skill (Aware of the Danger zone)
-                       
-                      </li>
-                      <li>
-                         Cause of the element placement
-                      </li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseTwo"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                  Module 02 - The Science of Hook Editing
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div class="coursecurriculum_body-wrap">
-                      <ol>
-                        <li>  Types of Hook (Visual Hook, Sound Hook and Text hook)</li>
-                      <li>Components of hook</li>
-                      <li>Practical Implementation
-                      </li>
-                      
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseThree"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                  Module 03 - 1st Live Practice Session (Documentry Type)
-
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                  
-                    <div class="coursecurriculum_body-wrap">
-                      <ol>
-                        <li> 1 reel from scratch to the final output
-                        </li>
-                      <li>QnA session ( All about premiere pro issues and editing issues)
-                      </li>
-                      
-                      
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseFour"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                  Module 04 - 2nd Live Practice Session (Podcast Edit)
-
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                   
-                    <div class="coursecurriculum_body-wrap">
-                    <ol>
-                        <li> 1 reel from scratch to the final output
-
-                        </li>
-                      <li>QnA session ( All about premiere pro issues and editing issues)
-                      </li>
-                      
-                      
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseFive"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                  Module 05 - 3rd Live Practice Session
-
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                   
-                    <div class="coursecurriculum_body-wrap">
-                      <ol>
-                        <li> 1 reel from scratch to the final output
-
-                        </li>
-                      <li>QnA session ( All about premiere pro issues and editing issues)
-                      </li>
-                      
-                      
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseSIX"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSIX"
-                    aria-expanded="false"
-                    aria-controls="collapseSIX"
-                  >
-                  Module 06 - Master the art of copying
-
-                  </button>
-                </h2>
-                <div
-                  id="collapseSIX"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                   
-                    <div class="coursecurriculum_body-wrap">
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button poppins-bold text-light collapsed collapseSIX"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSIX"
-                    aria-expanded="false"
-                    aria-controls="collapseSIX"
-                  >
-                  Module 07 - Get clients with my methods
-
-                  </button>
-                </h2>
-                <div
-                  id="collapseSIX"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                   
-                    <div class="coursecurriculum_body-wrap">
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <div class="container-fluid">
+    <div class="container my-lg-5">
+      <h1 class="text-light text-center mb-5 course-text" style="font-size: 60px">Our Testimonial</h1>
+      <div class="your-class text-light my-5">
+        <div style="max-height: 241px; " class="mx-2">
+          <a data-fancybox href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="">
+            <div class="video-thumbnail-wrapper">
+              <img class="trailer-video" src="https://i.ytimg.com/vi/fuhE6PYnRMc/hq720.jpg" alt="Video Thumbnail"
+                class="trailer-video-thumbnail" />
+              <div class="play-button"></div>
             </div>
-          </div>
-          <div class="col-sm-5 mt-3 course-card-container" style="max-height: 800px;">
-            <div
-              class="card"
-              style="
-                border-radius: 20px;
-                background-color: #101323;
-                color: white;
-              "
-            >
-              <div class="card-body">
-                <img
-                  style="width: 100%; border-radius: 20px"
-                  src="assets/images/thumbnailforwebsit (1).webp"
-                  alt=""
-                />
-                <h1
-                  class="poppins-bold course-curri-card-text"
-                  style="font-size: 50px; margin-top: 10px"
-                >
-                  Unlock the Secret of
-                  <span
-                    class="gradient"
-                    style="
-                      color: transparent;
-                      -webkit-background-clip: text;
-                      background-clip: text;
-                    "
-                    >Reel Editing</span
-                  >
-                </h1>
-                <p class="poppins-bold">Instructed by Panda</p>
-                <ul class="list-group list-group-flush course-card-list-group">
-                  <li class="list-group-item d-flex align-items-center">
-                    <i class="text-danger mr-2 fas fa-check-circle"></i>
-                    <span class="poppins-semibold mx-3"
-                      >Easy payment method</span
-                    >
-                  </li>
-                  <li class="list-group-item d-flex align-items-center">
-                    <i class="text-danger mr-2 fas fa-check-circle"></i>
-                    <span class="poppins-semibold mx-3"
-                      >Lifetime Access of the Course</span
-                    >
-                  </li>
-                  <li class="list-group-item d-flex align-items-center">
-                    <i class="text-danger mr-2 fas fa-check-circle"></i>
-                    <span class="poppins-semibold mx-3"
-                      >Learn Live and clear all Doubts</span
-                    >
-                  </li>
-                  <li class="list-group-item d-flex align-items-center">
-                    <i class="text-danger mr-2 fas fa-check-circle"></i>
-                    <span class="poppins-semibold mx-3"
-                      >Guaranteed Best Pricing from the Market</span
-                    >
-                  </li>
-                  <li class="list-group-item d-flex align-items-center">
-                    <i class="text-danger mr-2 fas fa-check-circle"></i>
-                    <span class="poppins-semibold mx-3"
-                      >24/7 Instant Email Support</span
-                    >
-                  </li>
-                </ul>
-                <button class="btn btn-primary course-card-button rzp-button1" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
-                  <span class="poppins-bold course-card-button-text">
-                    Enroll Now
-                  </span>
-                </button>
-              </div>
+          </a>
+        </div>
+        <div style="max-height: 241px;" class="mx-2">
+          <a data-fancybox href="https://www.youtube.com/watch?v=BkEno373evQ" class="">
+            <div class="video-thumbnail-wrapper">
+              <img class="trailer-video" src="https://i.ytimg.com/vi/BkEno373evQ/hq720.jpg" alt="Video Thumbnail"
+                class="trailer-video-thumbnail" />
+              <div class="play-button"></div>
             </div>
-          </div>
+          </a>
         </div>
+        <div style="max-height: 241px;" class="mx-2">
+          <a data-fancybox href="https://www.youtube.com/watch?v=BkEno373evQ" class="">
+            <div class="video-thumbnail-wrapper">
+              <img class="trailer-video" src="https://i.ytimg.com/vi/BkEno373evQ/hq720.jpg" alt="Video Thumbnail"
+                class="trailer-video-thumbnail" />
+              <div class="play-button"></div>
+            </div>
+          </a>
+        </div>
+
+
+
       </div>
-    </div>
-    <!-- end -->
-
-<!-- slick slider -->
-
-<div class="container-fluid">
-  <div class="container my-lg-5">
-    <h1 class="text-light text-center mb-5 course-text" style="font-size: 60px">Our Testimonial</h1>
-    <div class="your-class text-light my-5">
-     <div style="max-height: 241px; " class="mx-2">
-      <a data-fancybox href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="">
-        <div class="video-thumbnail-wrapper">
-          <img
-            class="trailer-video"
-            src="https://i.ytimg.com/vi/fuhE6PYnRMc/hq720.jpg"
-            alt="Video Thumbnail"
-            class="trailer-video-thumbnail"
-          />
-          <div class="play-button"></div>
-        </div>
-      </a>
-     </div>
-     <div style="max-height: 241px;" class="mx-2">
-      <a data-fancybox href="https://www.youtube.com/watch?v=BkEno373evQ" class="">
-        <div class="video-thumbnail-wrapper">
-          <img
-            class="trailer-video"
-            src="https://i.ytimg.com/vi/BkEno373evQ/hq720.jpg"
-            alt="Video Thumbnail"
-            class="trailer-video-thumbnail"
-          />
-          <div class="play-button"></div>
-        </div>
-      </a>
-     </div>
-     <div style="max-height: 241px;" class="mx-2">
-      <a data-fancybox href="https://www.youtube.com/watch?v=BkEno373evQ" class="">
-        <div class="video-thumbnail-wrapper">
-          <img
-            class="trailer-video"
-            src="https://i.ytimg.com/vi/BkEno373evQ/hq720.jpg"
-            alt="Video Thumbnail"
-            class="trailer-video-thumbnail"
-          />
-          <div class="play-button"></div>
-        </div>
-      </a>
-     </div>
-    
-     
-      
     </div>
   </div>
-</div>
 
-<!-- end slick slider -->
-
+  <!-- end slick slider -->
 
 
 
-    <!-- know your mentor -->
-    <div class="container-fluid mentor-container" >
-      <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-        <h1 class="text-light text-center mb-5 meet-mentor-text" style="font-size: 60px">Meet Your Mentor</h1>
-        <div class="row d-flex justify-content-lg-around justify-content-md-around g-4">
-          <div class="col-sm-4 col-lg-4 col-md-5  p-0 my-4" style="display: flex; justify-content: center; flex-direction:column;">
-            <img   style="border-radius:20px ;" src="assets/images/mentor.webp" alt="">
-            <div class="row mentor-achive-container">
-              <div class="col text-light mentor-achive" onclick="window.location.href='https://www.youtube.com/@panda.magicedits'" >
-                <span style=" font-weight: 600;">14K+</span>
-                <span>Subscribers</span>
-                <span><i class="fa-brands fa-youtube"></i></span>
 
-              </div>
-              <div class="col text-light  mentor-achive" onclick="window.location.href='https://www.instagram.com/panda.magicedits/'">
-                <span style=" font-weight: 600;">600+</span>
-                <span>Followers</span>
-                <span><i class="fa-brands fa-instagram"></i></span>
-              </div>
-              <div class="col text-light  mentor-achive" onclick="window.location.href='https://discord.com/invite/gwdt6kqaUY'">
-                <span style=" font-weight: 600;">1.5K+</span>
-                <span>Followers</span>
-                <span><i class="fa-brands fa-discord"></i></span>
-              </div>
+  <!-- know your mentor -->
+  <div class="container-fluid mentor-container">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <h1 class="text-light text-center mb-5 meet-mentor-text" style="font-size: 60px">Meet Your Mentor</h1>
+      <div class="row d-flex justify-content-lg-around justify-content-md-around g-4">
+        <div class="col-sm-4 col-lg-4 col-md-5  p-0 my-4"
+          style="display: flex; justify-content: center; flex-direction:column;">
+          <img style="border-radius:20px ;" src="assets/images/mentor.webp" alt="">
+          <div class="row mentor-achive-container">
+            <div class="col text-light mentor-achive"
+              onclick="window.location.href='https://www.youtube.com/@panda.magicedits'">
+              <span style=" font-weight: 600;">14K+</span>
+              <span>Subscribers</span>
+              <span><i class="fa-brands fa-youtube"></i></span>
+
             </div>
-            
+            <div class="col text-light  mentor-achive"
+              onclick="window.location.href='https://www.instagram.com/panda.magicedits/'">
+              <span style=" font-weight: 600;">600+</span>
+              <span>Followers</span>
+              <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+            <div class="col text-light  mentor-achive"
+              onclick="window.location.href='https://discord.com/invite/gwdt6kqaUY'">
+              <span style=" font-weight: 600;">1.5K+</span>
+              <span>Followers</span>
+              <span><i class="fa-brands fa-discord"></i></span>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-6 col-md-5 p-0 my-4 about-us-text">
-            <p class="poppins-light text-light" style="font-size: 20px;">
-              Hey I am Panda a freelance video editor having more than 1.5 years of experience into video editing and more than 3 years of experience as a freelancer. 
-            </p>
-             <p class="poppins-light text-light" style="font-size: 20px;">But not only limited to that I am a content creator and thumbnail designer. Using my knowledge of editing and Youtube I have gained 14K+ subscribers on Youtube. You may know from my <a class="text-light redirect-link" href="http://" target="_blank" rel="noopener noreferrer">Live Reel Editing for my client part 1 video.</a>  
-            </p>
-              <p class="poppins-light text-light" style="font-size: 20px;">Before starting freelancing in video editing. I have worked with so many brands and projects as a web developer. I have proper knowledge of video editing, visual storytelling and tools like Adobe Premiere Pro, Adobe After Effects and Canva like software. I know how to grab clients in the initial stage and at an intermediate stage and at a pro level.</p>
-              <p class="poppins-light text-light" style="font-size: 20px;">I have edited over more than 200 reels for my clients and as a response I have generated over millions of views for them. I helped them all to grow their channel with my engaging editing and storytelling skill. 
-              </p>
-              <p class="poppins-light text-light" style="font-size: 20px;">I have edited over more than 200 reels for my clients and as a response I have generated over millions of views for them. I helped them all to grow their channel with my engaging editing and storytelling skill. 
-              </p>
-              <p class="poppins-light text-light" style="font-size: 20px;">I will try to pack all my knowledge within this 7 days Workshop.</p>
-            </p>
-          </div>
+
+        </div>
+        <div class="col-sm-6 col-lg-6 col-md-5 p-0 my-4 about-us-text">
+          <p class="poppins-light text-light" style="font-size: 20px;">
+            Hey I am Panda a freelance video editor having more than 1.5 years of experience into video editing and more
+            than 3 years of experience as a freelancer.
+          </p>
+          <p class="poppins-light text-light" style="font-size: 20px;">But not only limited to that I am a content
+            creator and thumbnail designer. Using my knowledge of editing and Youtube I have gained 14K+ subscribers on
+            Youtube. You may know from my <a class="text-light redirect-link" href="http://" target="_blank"
+              rel="noopener noreferrer">Live Reel Editing for my client part 1 video.</a>
+          </p>
+          <p class="poppins-light text-light" style="font-size: 20px;">Before starting freelancing in video editing. I
+            have worked with so many brands and projects as a web developer. I have proper knowledge of video editing,
+            visual storytelling and tools like Adobe Premiere Pro, Adobe After Effects and Canva like software. I know
+            how to grab clients in the initial stage and at an intermediate stage and at a pro level.</p>
+          <p class="poppins-light text-light" style="font-size: 20px;">I have edited over more than 200 reels for my
+            clients and as a response I have generated over millions of views for them. I helped them all to grow their
+            channel with my engaging editing and storytelling skill.
+          </p>
+          <p class="poppins-light text-light" style="font-size: 20px;">I have edited over more than 200 reels for my
+            clients and as a response I have generated over millions of views for them. I helped them all to grow their
+            channel with my engaging editing and storytelling skill.
+          </p>
+          <p class="poppins-light text-light" style="font-size: 20px;">I will try to pack all my knowledge within this 7
+            days Workshop.</p>
+          </p>
         </div>
       </div>
     </div>
-     <!--End know your mentor -->
+  </div>
+  <!--End know your mentor -->
 
 
-     <!-- enroll now button -->
-     <div class="container-fluid enrol-container">
-      <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-        <h1 class="text-light text-center mb-5 enrol-now-text" style="font-size: 60px">Enroll Now</h1>
-        <div class="container mx-auto">
-          <div class="row d-flex justify-content-center gap-md-4">
-            <div class="col-lg-4 col-md-6 my-4 p-0">
-             <div class="card enrol-now-card" >
+  <!-- enroll now button -->
+  <div class="container-fluid enrol-container">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <h1 class="text-light text-center mb-5 enrol-now-text" style="font-size: 60px">Enroll Now</h1>
+      <div class="container mx-auto">
+        <div class="row d-flex justify-content-center gap-md-4">
+          <div class="col-lg-4 col-md-6 my-4 p-0">
+            <div class="card enrol-now-card">
               <div class="card-body">
                 <h2 class="text-light " style="font-weight: 700;">1st Ever Workshop launch Offer (Save 1,000)</h2>
                 <div class="d-flex flex-row align-content-center">
                   <h1 class="gradient mt-4 enrol-now-card-price" style="">
-                    &#8377 499 <span class="text-light align-text-center enrol-now-card-price-discount" style="font-size: 40px; font-weight: 400;">&#8377 1499</span></h1>
-                  
+                    &#8377 499 <span class="text-light align-text-center enrol-now-card-price-discount"
+                      style="font-size: 40px; font-weight: 400;">&#8377 1499</span></h1>
+
                 </div>
-             
+
                 <ul class="list-group list-group-flush course-card-list-group my-3">
                   <li class="list-group-item d-flex align-items-center">
                     <i class="text-light mr-2 fas fa-check"></i>
-                    <span class="poppins-light mx-3"
-                      >Easy payment method</span
-                    >
+                    <span class="poppins-light mx-3">Easy payment method</span>
                   </li>
                   <li class="list-group-item d-flex align-items-center">
                     <i class="text-light mr-2 fas fa-check"></i>
-                    <span class="poppins-light mx-3"
-                      >Lifetime Access of the Course</span
-                    >
+                    <span class="poppins-light mx-3">Lifetime Access of the Course</span>
                   </li>
                   <li class="list-group-item d-flex align-items-center">
                     <i class="text-light mr-2 fas fa-check"></i>
-                    <span class="poppins-light mx-3"
-                      >Learn Anytime, Anywhere</span
-                    >
+                    <span class="poppins-light mx-3">Learn Anytime, Anywhere</span>
                   </li>
                   <li class="list-group-item d-flex align-items-center">
                     <i class="text-light mr-2 fas fa-check"></i>
-                    <span class="poppins-light mx-3"
-                      >Guaranteed Best Pricing from the Market</span
-                    >
+                    <span class="poppins-light mx-3">Guaranteed Best Pricing from the Market</span>
                   </li>
                   <li class="list-group-item d-flex align-items-center">
                     <i class="text-light mr-2 fas fa-check"></i>
-                    <span class="poppins-light mx-3"
-                      >24/7 Instant Email Support</span
-                    >
+                    <span class="poppins-light mx-3">24/7 Instant Email Support</span>
                   </li>
                 </ul>
-                <button class="btn btn-primary enrol-now-card-button" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
-                  <span class="poppins-bold " >
+                <button class="btn btn-primary enrol-now-card-button"
+                  onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
+                  <span class="poppins-bold ">
                     Enroll Now
                   </span>
                 </button>
-                <p class="poppins-light  mt-4" style="color: #9393d0;">Note: No exceptions will be made beyond the offer expiry date. Prices will increase and no free bonuses will be available.</p>
+                <p class="poppins-light  mt-4" style="color: #9393d0;">Note: No exceptions will be made beyond the offer
+                  expiry date. Prices will increase and no free bonuses will be available.</p>
               </div>
-             </div>
             </div>
-            <div class="col-lg-5 col-md-5 mx-lg-5 mx-md-0 my-4 p-0">
-              <h1 class="text-light what-y-get">What you get</h1>
-              <ul class="list-group list-group-flush course-card-list-group my-3">
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >10+ Hours of live workshop and live doubt session. Lifetime access to the recording lessons. 
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >Dedicated monthly Exclusive Doubt sessions for next 1 year. 
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    > All the project files, presets and templates used in the session. So that you can just drag and drop to your own client's project. 
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >Practical reel editing lessons explaning different aspects such as professionalism, creativity and much more.
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >Premium Access to Private Community of serious Video Editors. 
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >Upon completion of 7 days regular classes you will get a certificate. 
-                    </span
-                  >
-                </li>
-              </ul>
-              <h1 class="text-light what-y-get">Amazing bonuses included...</h1>
-              <ul class="list-group list-group-flush course-card-list-group my-3">
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >E-Book explaining Client finding guide for Beginners and intermediate <span class="fw-bold">(Worth &#8377; 149)</span> freelancers. 
-                    </span
-                  >
-                </li>
-                <li class="list-group-item d-flex align-items-center">
-                  <i class="text-light mr-2 fas fa-check"></i>
-                  <span class="poppins-light mx-3"
-                    >Readymade 2 project files of edited videos for my clients.  <span class="fw-bold">(Worth &#8377; 499)</span></span
-                  >
-                </li>
-               
-                
-              </ul>
-            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 mx-lg-5 mx-md-0 my-4 p-0">
+            <h1 class="text-light what-y-get">What you get</h1>
+            <ul class="list-group list-group-flush course-card-list-group my-3">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">10+ Hours of live workshop and live doubt session. Lifetime access to
+                  the recording lessons.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">Dedicated monthly Exclusive Doubt sessions for next 1 year.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3"> All the project files, presets and templates used in the session. So
+                  that you can just drag and drop to your own client's project.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">Practical reel editing lessons explaning different aspects such as
+                  professionalism, creativity and much more.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">Premium Access to Private Community of serious Video Editors.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">Upon completion of 7 days regular classes you will get a certificate.
+                </span>
+              </li>
+            </ul>
+            <h1 class="text-light what-y-get">Amazing bonuses included...</h1>
+            <ul class="list-group list-group-flush course-card-list-group my-3">
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">E-Book explaining Client finding guide for Beginners and intermediate
+                  <span class="fw-bold">(Worth &#8377; 149)</span> freelancers.
+                </span>
+              </li>
+              <li class="list-group-item d-flex align-items-center">
+                <i class="text-light mr-2 fas fa-check"></i>
+                <span class="poppins-light mx-3">Readymade 2 project files of edited videos for my clients.  <span
+                    class="fw-bold">(Worth &#8377; 499)</span></span>
+              </li>
+
+
+            </ul>
           </div>
         </div>
       </div>
-     </div>
-     <!-- end enroll now button -->
+    </div>
+  </div>
+  <!-- end enroll now button -->
 
-     <div class="container-fluid">
-      <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-        <div class="row d-flex gap-2  text-center gradient text-white py-5 rounded-4">
-           
-           
-              <div class="col-12  mb-4">
-                <h1 class="display-6 fw-bold">Amazing Free bonuses</h1>
-               <h4>For the 1st 20 Members only</h4>
-              </div>
-              <div class="col-12 mt-5">
-                <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                        <span class="poppins-light days1 fw-bold" style="font-size: 30px;">0</span>
-                    </div>
-                    <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                        <span class="hours1 fw-bold" style="font-size: 30px;">0</span>
-                    </div>
-                    <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                        <span class="minutes1 fw-bold" style="font-size: 30px;">0</span>
-                    </div>
-                    <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                        <span class="seconds1 fw-bold" style="font-size: 30px;">0</span>
-                    </div>
-                </div>
+  <div class="container-fluid">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <div class="row d-flex gap-2  text-center gradient text-white py-5 rounded-4">
+
+
+        <div class="col-12  mb-4">
+          <h1 class="display-6 fw-bold">Amazing Free bonuses</h1>
+          <h4>For the 1st 20 Members only</h4>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="poppins-light days1 fw-bold" style="font-size: 30px;">0</span>
             </div>
-              <div class="col-12 mt-4">
-                <a href="https://rzp.io/l/payment-for-workshop"  class="timer-join-now btn btn-light border border-2 p-4 poppins-bold fw-bolder border-white  btn-lg" style="color: transparent;">Join Now</a>
-              </div>
-          
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="hours1 fw-bold" style="font-size: 30px;">0</span>
+            </div>
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="minutes1 fw-bold" style="font-size: 30px;">0</span>
+            </div>
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="seconds1 fw-bold" style="font-size: 30px;">0</span>
+            </div>
           </div>
-         
-            
-            
-         
-        
-      </div>
-     </div> 
+        </div>
+        <div class="col-12 mt-4">
+          <a href="https://rzp.io/l/payment-for-workshop"
+            class="timer-join-now btn btn-light border border-2 p-4 poppins-bold fw-bolder border-white  btn-lg"
+            style="color: transparent;">Join Now</a>
+        </div>
 
-     <!-- what will you learn in the workshop -->
-     <div class="container-fluid">
-      <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-        <h1 class="text-light text-center mb-5 wht-yu-get-text" style="font-size: 60px">What will you learn in the <span
-          class="gradient"
-          style="
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <!-- what will you learn in the workshop -->
+  <div class="container-fluid">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <h1 class="text-light text-center mb-5 wht-yu-get-text" style="font-size: 60px">What will you learn in the <span
+          class="gradient" style="
             color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-          "
-          >workshop?</span></h1>
+          ">workshop?</span></h1>
 
-        <div class="container mx-auto " style="margin-top: 80px;">
-          <div class="row d-flex justify-content-center gap-md-3 gap-lg-4 gap-md-1 my-5 row-whatget">
-            <div class="col-sm-5 col-md-5 col-lg-5 mt-4 p-0">
-                <div class="card wht-yu-lern-card">
-                  <div class="card-header p-4 d-flex justify-content-center" style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
-                    <img   style="width: 160px;" src="assets/images/professionalism.svg" alt="">
-                  </div>
-                  <div class="card-body p-4">
-                    <h4 class="text-light poppins-regular wht-yu-lern-card-heading ">The Art of Professionalism</h4>
-                    <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
-                      <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient" style="background-clip: text;color: transparent;"></i></div>
-                      <div class="mx-2 wht-yu-lern-card-p" style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
-                        With the small changes in your edited reel your reel will be able to get the look of professionalism. All the precise and notable points I have shared that after reviewing more than 500 videos of my subscribers. 
+      <div class="container mx-auto " style="margin-top: 80px;">
+        <div class="row d-flex justify-content-center gap-md-3 gap-lg-4 gap-md-1 my-5 row-whatget">
+          <div class="col-sm-5 col-md-5 col-lg-5 mt-4 p-0">
+            <div class="card wht-yu-lern-card">
+              <div class="card-header p-4 d-flex justify-content-center"
+                style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
+                <img style="width: 160px;" src="assets/images/professionalism.svg" alt="">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="text-light poppins-regular wht-yu-lern-card-heading ">The Art of Professionalism</h4>
+                <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
+                  <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient"
+                      style="background-clip: text;color: transparent;"></i></div>
+                  <div class="mx-2 wht-yu-lern-card-p"
+                    style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
+                    With the small changes in your edited reel your reel will be able to get the look of
+                    professionalism. All the precise and notable points I have shared that after reviewing more than 500
+                    videos of my subscribers.
 
 
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="card wht-yu-lern-card mt-4">
-                  <div class="card-header p-4 d-flex justify-content-center" style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
-                    <img   style="width: 160px;" src="assets/images/hook.svg" alt="">
-                  </div>
-                  <div class="card-body p-4">
-                    <h4 class="text-light poppins-regular wht-yu-lern-card-heading">The potential of hook
-                    </h4>
-                    <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
-                      <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient" style="background-clip: text;color: transparent;"></i></div>
-                      <div class="mx-2 wht-yu-lern-card-p" style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
-                        With the techniques of my editing hook you will be easily get that attention of 3 seconds of the viewers which matters the most. This will make sure the reel could not swiped away easily.
-
-  
-                      </div>
-                    </div>
-  
                   </div>
                 </div>
+
+              </div>
             </div>
-            <div class="col-sm-5 col-md-5 col-lg-5  mt-4 p-0">
-              <div class="card wht-yu-lern-card">
-                <div class="card-header p-4 d-flex justify-content-center" style=" border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
-                  <img   style="width: 160px;" src="assets/images/live.svg" alt="">
-                </div>
-                <div class="card-body p-4">
-                  <h4 class="text-light poppins-regular wht-yu-lern-card-heading"> Live exclusive practical lessons
-                  </h4>
-                  <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
-                    <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient" style="background-clip: text;color: transparent;"></i></div>
-                    <div class="mx-2 wht-yu-lern-card-p" style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
-                      You will get 3 edited Reels from scratch which will further help you to build your future portfolio. You Will also get to know all my exclusive tricks thoroughly. So that you can implement those in your future projects.
-
-                    </div>
-                  </div>
-
-                </div>
+            <div class="card wht-yu-lern-card mt-4">
+              <div class="card-header p-4 d-flex justify-content-center"
+                style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
+                <img style="width: 160px;" src="assets/images/hook.svg" alt="">
               </div>
-              <div class="card wht-yu-lern-card mt-4">
-                <div class="card-header p-4 d-flex justify-content-center" style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
-                  <img   style="width: 160px;" src="assets/images/exponential growth.svg" alt="">
-                </div>
-                <div class="card-body p-4">
-                  <h4 class="text-light poppins-regular wht-yu-lern-card-heading">The exponential curve of earning.
-                  </h4>
-                  <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
-                    <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient" style="background-clip: text;color: transparent;"></i></div>
-                    <div class="mx-2 wht-yu-lern-card-p" style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
-                      
-The process of going slow but making big impacts in the earning. All the methods to get clients not only finding actively but getting clients while you sleep.
-
-All the suggestions and tips from me on live sessions from my knowledge experiences.
+              <div class="card-body p-4">
+                <h4 class="text-light poppins-regular wht-yu-lern-card-heading">The potential of hook
+                </h4>
+                <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
+                  <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient"
+                      style="background-clip: text;color: transparent;"></i></div>
+                  <div class="mx-2 wht-yu-lern-card-p"
+                    style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
+                    With the techniques of my editing hook you will be easily get that attention of 3 seconds of the
+                    viewers which matters the most. This will make sure the reel could not swiped away easily.
 
 
-                    </div>
                   </div>
-
                 </div>
+
               </div>
+            </div>
           </div>
+          <div class="col-sm-5 col-md-5 col-lg-5  mt-4 p-0">
+            <div class="card wht-yu-lern-card">
+              <div class="card-header p-4 d-flex justify-content-center"
+                style=" border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
+                <img style="width: 160px;" src="assets/images/live.svg" alt="">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="text-light poppins-regular wht-yu-lern-card-heading"> Live exclusive practical lessons
+                </h4>
+                <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
+                  <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient"
+                      style="background-clip: text;color: transparent;"></i></div>
+                  <div class="mx-2 wht-yu-lern-card-p"
+                    style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
+                    You will get 3 edited Reels from scratch which will further help you to build your future portfolio.
+                    You Will also get to know all my exclusive tricks thoroughly. So that you can implement those in
+                    your future projects.
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card wht-yu-lern-card mt-4">
+              <div class="card-header p-4 d-flex justify-content-center"
+                style="border-bottom: 1px solid rgba(255, 255, 255, 0.236);">
+                <img style="width: 160px;" src="assets/images/exponential growth.svg" alt="">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="text-light poppins-regular wht-yu-lern-card-heading">The exponential curve of earning.
+                </h4>
+                <div class="d-flex mb-5" style="font-size: 20px !important; margin-top: 20px;">
+                  <div class="poppins-light" style="height: 100%;"><i class=" mr-2 fa-solid fa-star gradient"
+                      style="background-clip: text;color: transparent;"></i></div>
+                  <div class="mx-2 wht-yu-lern-card-p"
+                    style="text-align: left !important; color: #d0d5ddd2; font-weight: 100">
+
+                    The process of going slow but making big impacts in the earning. All the methods to get clients not
+                    only finding actively but getting clients while you sleep.
+
+                    All the suggestions and tips from me on live sessions from my knowledge experiences.
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
-         
         </div>
-      </div>
-     </div>
-      <!-- end what will you learn in the workshop -->
 
-      <!-- Here’s what our Current Students  have to say... -->
-      <div class="container-fluid">
-        <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-          <h1 class="text-light text-center mb-5 comments-text" style="font-size: 60px">Here’s what our Audience  have to say...</h1>
-          <div class="container mx-auto d-flex justify-content-center flex-column" style="margin-top: 80px;">
-            <div class="row ">
-              
-              <div class="col-lg-4 col-md-6  p-0">
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      An excellent editing video. Learnt so much from this one video.
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/_AC_zzXcKGlBgmNsB_1KmcvYppi7WXnSAz_YceAUdPlOEm2-Zs-fwiiGqPcSYt4ewhFFBZysYg=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col ">
-                        <h4>Every Paisa Matters</h4>
-                      <p>138K subscribers</p>
-                      </div>
-                    </div>
+      </div>
+    </div>
+  </div>
+  <!-- end what will you learn in the workshop -->
+
+  <!-- Here’s what our Current Students  have to say... -->
+  <div class="container-fluid">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <h1 class="text-light text-center mb-5 comments-text" style="font-size: 60px">Here’s what our Audience have to
+        say...</h1>
+      <div class="container mx-auto d-flex justify-content-center flex-column" style="margin-top: 80px;">
+        <div class="row ">
+
+          <div class="col-lg-4 col-md-6  p-0">
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  An excellent editing video. Learnt so much from this one video.
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/_AC_zzXcKGlBgmNsB_1KmcvYppi7WXnSAz_YceAUdPlOEm2-Zs-fwiiGqPcSYt4ewhFFBZysYg=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
                   </div>
-                </div>
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      Bro you will hit Lakh+ subscribers very soon just because of your teaching style... Very good and helpful one..!👍
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/mGHKh9ZMVRIfQABohjed8rVfbMX_e8lZACGXybCZOJuKQKnXR5Q-LpkBinCUuDUXH0wyP0Z2l60=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>Berozgaar_Bsc_wala</h4>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      Waah Dil khush krdiaa😍😍😍😍😍
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/wAueLZb8gMsIpnBd05YLoxjbJnqpmvZSs-AdW6ZvPTifORLwykhQfxil-MYW4gmG5PyjfBokaA=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>nouman-ejaz903</h4>
-                       
-                      </div>
-                    </div>
+                  <div class="col ">
+                    <h4>Every Paisa Matters</h4>
+                    <p>138K subscribers</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 p-0 ">
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      Masterpiece video
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/lt6RAsQperWtyZluXz_1zCgtz4ZyHQvHHEMM2IxPNA3gXCSvW6HVriZK6tXp0pu5qOUFg3VC=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col ">
-                        <h4>astheticavi</h4>
-                        <p>2.26M subscribers
-                        </p>
-                      </div>
-                    </div>
+            </div>
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  Bro you will hit Lakh+ subscribers very soon just because of your teaching style... Very good and
+                  helpful one..!👍
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/mGHKh9ZMVRIfQABohjed8rVfbMX_e8lZACGXybCZOJuKQKnXR5Q-LpkBinCUuDUXH0wyP0Z2l60=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>Berozgaar_Bsc_wala</h4>
+
                   </div>
                 </div>
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      Bahut ache bhai❤️love your content keep it up👍
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/U9Dpde3xvlK6JK9YllkF8_7mWYQ2f_8aAsU5tBBHpaEQclpq-dM54qM9LjvqmaKZorUnbh023JQ=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>SpiritualMitra02</h4>
-                       
-                      </div>
-                    </div>
+              </div>
+            </div>
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  Waah Dil khush krdiaa😍😍😍😍😍
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/wAueLZb8gMsIpnBd05YLoxjbJnqpmvZSs-AdW6ZvPTifORLwykhQfxil-MYW4gmG5PyjfBokaA=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>nouman-ejaz903</h4>
+
                   </div>
                 </div>
-                <!-- <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 ">
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  Masterpiece video
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/lt6RAsQperWtyZluXz_1zCgtz4ZyHQvHHEMM2IxPNA3gXCSvW6HVriZK6tXp0pu5qOUFg3VC=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col ">
+                    <h4>astheticavi</h4>
+                    <p>2.26M subscribers
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  Bahut ache bhai❤️love your content keep it up👍
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/U9Dpde3xvlK6JK9YllkF8_7mWYQ2f_8aAsU5tBBHpaEQclpq-dM54qM9LjvqmaKZorUnbh023JQ=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>SpiritualMitra02</h4>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
                   <div class="card-body text-ligt ">
                     <span>
                       <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
@@ -1275,490 +1182,431 @@ All the suggestions and tips from me on live sessions from my knowledge experien
                     </div>
                   </div>
                 </div> -->
-              </div>
-              <div class="col-lg-4 col-md-6 p-0">
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      The First Live Editing Channel. Great Initiative for beginners keep it up.
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/un1DvrgMOyjRfAOv_Nfv_wz5wiAHhxmlhQn_-HEDDUHvcrpjt166Otxb-mfuQaTv72Ho8WowPw=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>sourabhahuja2352 </h4>
-                      </div>
-                    </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0">
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  The First Live Editing Channel. Great Initiative for beginners keep it up.
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/un1DvrgMOyjRfAOv_Nfv_wz5wiAHhxmlhQn_-HEDDUHvcrpjt166Otxb-mfuQaTv72Ho8WowPw=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
                   </div>
-                </div>
-                
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      greatttt!!! it helped me so muchhhhh thankyouuuuu
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/ytc/AIdro_m803QGbUkfuDHVEPFdcWmcFL79e1aEofZx8RetfOxLTWE4__BwePMK0hFcJZ3dRKoIVg=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>jagrutiJethva-y2s</h4>
-                       
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
-                  <div class="card-body text-ligt ">
-                    <span>
-                      <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
-                    </span>
-                    <p class="poppins-light mt-4">
-                      Brilliant hai bhai! Thanks so much,....aapne isme human psychology bhi sikhayi hai :)
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-2">
-                        <img   style="width: 50px; border-radius: 100%;" src="https://yt3.googleusercontent.com/p8tEyYMMokL_XNEdM_tPDnXLP_dtY5KN26w1tSA-3-_9GFFRoAd_ijlQI8fMdQJUqRxrtWydO6Q=s160-c-k-c0x00ffffff-no-rj" alt="">
-                      </div>
-                      <div class="col d-flex align-items-center">
-                        <h4>whatsonmytable</h4>
-                      
-                      </div>
-                    </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>sourabhahuja2352 </h4>
                   </div>
                 </div>
               </div>
             </div>
-           
-              
-              
-           
+
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  greatttt!!! it helped me so muchhhhh thankyouuuuu
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/ytc/AIdro_m803QGbUkfuDHVEPFdcWmcFL79e1aEofZx8RetfOxLTWE4__BwePMK0hFcJZ3dRKoIVg=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>jagrutiJethva-y2s</h4>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card my-4 mx-lg-3 mx-md-3 comments-card p-3 ">
+              <div class="card-body text-ligt ">
+                <span>
+                  <i style="font-size: 40px;" class="fa-solid fa-quote-left"></i>
+                </span>
+                <p class="poppins-light mt-4">
+                  Brilliant hai bhai! Thanks so much,....aapne isme human psychology bhi sikhayi hai :)
+                </p>
+                <div class="row">
+                  <div class="col-lg-2">
+                    <img style="width: 50px; border-radius: 100%;"
+                      src="https://yt3.googleusercontent.com/p8tEyYMMokL_XNEdM_tPDnXLP_dtY5KN26w1tSA-3-_9GFFRoAd_ijlQI8fMdQJUqRxrtWydO6Q=s160-c-k-c0x00ffffff-no-rj"
+                      alt="">
+                  </div>
+                  <div class="col d-flex align-items-center">
+                    <h4>whatsonmytable</h4>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
-        <!--End  Here’s what our Current Students  have to say... -->
-
-
-        <div class="container-fluid">
-          <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-            <div class="row d-flex gap-2  text-center gradient text-white py-5 rounded-4">
-               
-               
-                  <div class="col-12  mb-4">
-                    <h1 class="display-6 fw-bold">Become a Professional Reel Editor now</h1>
-                    <h4 class=" fw-bold">Classes will start in next</h4>
-                  </div>
-                  <div class="col-12 mt-5">
-                    <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
-                        <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                            <span class="poppins-light days2 fw-bold" style="font-size: 30px;">0</span>
-                        </div>
-                        <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                            <span class="hours2 fw-bold" style="font-size: 30px;">0</span>
-                        </div>
-                        <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                            <span class="minutes2 fw-bold" style="font-size: 30px;">0</span>
-                        </div>
-                        <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3" style="min-width: 8%;">
-                            <span class="seconds2 fw-bold" style="font-size: 30px;">0</span>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-12 mt-4" >
-                    <a  href="https://rzp.io/l/payment-for-workshop" class="timer-join-now btn btn-light border border-2 p-4 poppins-bold fw-bolder border-white  btn-lg" style="color: transparent;">Join Now</a>
-                  </div>
-              
-              </div>
-             
-                
-                
-             
-            
-          </div>
-         </div> 
-
-
-       
-        <!-- fAQ -->
-        <div class="container-fluid">
-          <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
-            <h1 class="text-light text-center mb-5 faq-text" style="font-size: 60px">Frequently Asked Questions</h1>
-            <div class="container mx-auto d-flex flex-column" style="margin-top: 80px;">
-              <div class="row ">
-                <div class="accordion p-0" id="accordionExample" style="background: black !important;">
-                  <div class="accordion-item"  >
-                    <h2 class="accordion-header"  >
-                      <button
-                        class="accordion-button poppins-regular text-light"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                        style="background: black !important;"
-                      >
-                      What will I learn in this workshop?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;" >
-                        <p class="poppins-regular">You’ll learn the fundamentals of reel editing beggining from basics to advanced animnations. You will get to learn all my secret editing hacks and methods to make perfect reel videos for your clients. By the end of the workshop, you'll have 3 fully edited reels and My Premiere Pro project file and presets used in the workshop.
-                        </p>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                        style="background: black !important;"
-                      >
-                      Do I need any prior experience in video editing?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                      style="background: black !important;"
-                    >
-                      <div class="accordion-body">
-                        <p class="poppins-regular">Yes, you must know the basics of editing like cutting, trimming, basics of masking and keyframe. Only the basics. This workshop is designed for beginners, but even if you have some experience, you'll find valuable tips and techniques to enhance your skills.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                        style="background: black !important;"
-                      >
-                      What software will we be using?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">We will be using Adobe Premiere Pro. If you don’t have this software, we’ll provide guidance on the solution.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseFour"
-                        style="background: black !important;"
-                      >
-                      What equipment do I need for the workshop?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">You’ll need a computer or laptop with the video editing software installed, headphones, and a stable internet connection.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="false"
-                        aria-controls="collapseFive"
-                        style="background: black !important;"
-                      >
-                      Will the workshop be conducted online or in person?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">This workshop will be conducted online. We’ll use Google meet for live sessions.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSIX"
-                        aria-expanded="false"
-                        aria-controls="collapseSIX"
-                        style="background: black !important;"
-                      >
-                      How long is each daily session?*
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseSIX"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">Each daily session will be approximately 2 to 2.5 hours long, including time for Q&A and practical exercises.
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven"
-                        aria-expanded="false"
-                        aria-controls="collapseSeven"
-                        style="background: black !important;"
-                      >
-                      Can I access the workshop materials after the session?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseSeven"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">Yes, you will have access to all workshop materials, including recordings of the sessions, practice files, and additional resources such as presets, templates and mogrt files for lifetime after the workshop ends.
-
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseEight"
-                        aria-expanded="false"
-                        aria-controls="collapseEight"
-                        style="background: black !important;"
-                      >
-                      What if I miss a session?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseEight"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular"> If you miss a session, you can catch up by watching the recorded session, which will be available for you.
-
-
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine"
-                        aria-expanded="false"
-                        aria-controls="collapseNine"
-                        style="background: black !important;"
-                      >
-                      Is there a certificate of completion?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseNine"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">Yes, upon successfully completing the workshop, you will receive a certificate of completion that you can add to your portfolio or resume.
-
-
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button poppins-regular text-light collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen"
-                        aria-expanded="false"
-                        aria-controls="collapseTen"
-                        style="background: black !important;"
-                      >
-                      How do I sign up for the workshop?
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTen"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body" style="background: black !important;">
-                        <p class="poppins-regular">To sign up, visit our [pandaskillschool.com](https://pandaskillschool.com) and click on enroll now. You can also contact us at @panda.magicedits on instagram.If you have any questions or need assistance with the enrollment process.
 
 
 
-                        </p>
-                       
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               
-              </div>
-             
-                
-                
-             
+
+      </div>
+    </div>
+  </div>
+  <!--End  Here’s what our Current Students  have to say... -->
+
+
+  <div class="container-fluid">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <div class="row d-flex gap-2  text-center gradient text-white py-5 rounded-4">
+
+
+        <div class="col-12  mb-4">
+          <h1 class="display-6 fw-bold">Become a Professional Reel Editor now</h1>
+          <h4 class=" fw-bold">Classes will start in next</h4>
+        </div>
+        <div class="col-12 mt-5">
+          <div class="d-flex justify-content-center align-items-center flex-wrap gap-3">
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="poppins-light days2 fw-bold" style="font-size: 30px;">0</span>
+            </div>
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="hours2 fw-bold" style="font-size: 30px;">0</span>
+            </div>
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="minutes2 fw-bold" style="font-size: 30px;">0</span>
+            </div>
+            <div class="count-box bg-transparent text-light border border-2 border-white rounded-4 p-3"
+              style="min-width: 8%;">
+              <span class="seconds2 fw-bold" style="font-size: 30px;">0</span>
             </div>
           </div>
-         </div>  
+        </div>
+        <div class="col-12 mt-4">
+          <a href="https://rzp.io/l/payment-for-workshop"
+            class="timer-join-now btn btn-light border border-2 p-4 poppins-bold fw-bolder border-white  btn-lg"
+            style="color: transparent;">Join Now</a>
+        </div>
+
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" defer></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
-<script type="text/javascript" src="assets/slick/slick.min.js" defer></script>
-    <script>
-      
-      Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
-    </script>
-    <script>
-     document.querySelector("body").addEventListener("mousemove", function(event) {
-    eyeball(event.pageX, event.pageY);
+
+
+
+    </div>
+  </div>
+
+
+
+  <!-- fAQ -->
+  <div class="container-fluid">
+    <div class="container" style="margin-top: 70px;margin-bottom: 70px;">
+      <h1 class="text-light text-center mb-5 faq-text" style="font-size: 60px">Frequently Asked Questions</h1>
+      <div class="container mx-auto d-flex flex-column" style="margin-top: 80px;">
+        <div class="row ">
+          <div class="accordion p-0" id="accordionExample" style="background: black !important;">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                  style="background: black !important;">
+                  What will I learn in this workshop?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">You’ll learn the fundamentals of reel editing beggining from basics to
+                    advanced animnations. You will get to learn all my secret editing hacks and methods to make perfect
+                    reel videos for your clients. By the end of the workshop, you'll have 3 fully edited reels and My
+                    Premiere Pro project file and presets used in the workshop.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo" style="background: black !important;">
+                  Do I need any prior experience in video editing?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample"
+                style="background: black !important;">
+                <div class="accordion-body">
+                  <p class="poppins-regular">Yes, you must know the basics of editing like cutting, trimming, basics of
+                    masking and keyframe. Only the basics. This workshop is designed for beginners, but even if you have
+                    some experience, you'll find valuable tips and techniques to enhance your skills.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree" style="background: black !important;">
+                  What software will we be using?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">We will be using Adobe Premiere Pro. If you don’t have this software, we’ll
+                    provide guidance on the solution.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour" style="background: black !important;">
+                  What equipment do I need for the workshop?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">You’ll need a computer or laptop with the video editing software installed,
+                    headphones, and a stable internet connection.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive" style="background: black !important;">
+                  Will the workshop be conducted online or in person?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">This workshop will be conducted online. We’ll use Google meet for live
+                    sessions.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSIX" aria-expanded="false"
+                  aria-controls="collapseSIX" style="background: black !important;">
+                  How long is each daily session?*
+                </button>
+              </h2>
+              <div id="collapseSIX" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">Each daily session will be approximately 2 to 2.5 hours long, including
+                    time for Q&A and practical exercises.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                  aria-controls="collapseSeven" style="background: black !important;">
+                  Can I access the workshop materials after the session?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">Yes, you will have access to all workshop materials, including recordings
+                    of the sessions, practice files, and additional resources such as presets, templates and mogrt files
+                    for lifetime after the workshop ends.
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                  aria-controls="collapseEight" style="background: black !important;">
+                  What if I miss a session?
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular"> If you miss a session, you can catch up by watching the recorded session,
+                    which will be available for you.
+
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                  aria-controls="collapseNine" style="background: black !important;">
+                  Is there a certificate of completion?
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">Yes, upon successfully completing the workshop, you will receive a
+                    certificate of completion that you can add to your portfolio or resume.
+
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button poppins-regular text-light collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                  aria-controls="collapseTen" style="background: black !important;">
+                  How do I sign up for the workshop?
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background: black !important;">
+                  <p class="poppins-regular">To sign up, visit our [pandaskillschool.com](https://pandaskillschool.com)
+                    and click on enroll now. You can also contact us at @panda.magicedits on instagram.If you have any
+                    questions or need assistance with the enrollment process.
+
+
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const content = document.querySelector('.content');
+
+  // Ensure the loader is visible for at least 1 second
+  setTimeout(() => {
+    if (preloader) preloader.style.display = 'none';
+    if (content) content.style.display = 'block';
+  }, 1000); // 1000 ms = 1 second
 });
 
-document.querySelector("body").addEventListener("touchmove", function(event) {
-    eyeball(event.touches[0].pageX, event.touches[0].pageY);
-});
 
-function eyeball(pageX, pageY) {
-    var eye = document.querySelectorAll(".eye");
-    eye.forEach(function (eye) {
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  <script>
+
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  </script>
+  <script>
+    document.querySelector("body").addEventListener("mousemove", function (event) {
+      eyeball(event.pageX, event.pageY);
+    });
+
+    document.querySelector("body").addEventListener("touchmove", function (event) {
+      eyeball(event.touches[0].pageX, event.touches[0].pageY);
+    });
+
+    function eyeball(pageX, pageY) {
+      var eye = document.querySelectorAll(".eye");
+      eye.forEach(function (eye) {
         let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
         let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
         let radian = Math.atan2(pageX - x, pageY - y);
         let rot = radian * (180 / Math.PI) * -1 + 270;
         eye.style.transform = "rotate(" + rot + "deg)";
-    });
-    const text = document.querySelector(".text p");
+      });
+      const text = document.querySelector(".text p");
 
-text.innerHTML = text.innerText
-	.split("")
-	.map(
-		(char, i) => `<span style="transform:rotate(${i * 5.8}deg)">${char}</span>`
-	)
-	.join("");
+      text.innerHTML = text.innerText
+        .split("")
+        .map(
+          (char, i) => `<span style="transform:rotate(${i * 5.8}deg)">${char}</span>`
+        )
+        .join("");
 
-}
-
-    </script>
-    <script>
-      $(document).ready(function(){
-  $('.your-class').slick({
-    slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
     }
-    
-  ]
-  });
-});
-		
-        // Countdown timer logic
-        function startCountdown() {
-    // Set the target date and time for the first countdown to October 1st, 5:00 PM
-    const countdownTarget1 = new Date("October 1, 2024 17:00:00").getTime();
-    
-    // Set the target date and time for the second countdown (if needed, adjust this)
-    const countdownTarget2 = new Date("October 1, 2024 17:00:00").getTime();
-    
-    const countdownInterval = setInterval(() => {
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+    });
+
+    // Countdown timer logic
+    function startCountdown() {
+      // Set the target date and time for the first countdown to October 1st, 5:00 PM
+      const countdownTarget1 = new Date("October 1, 2024 17:00:00").getTime();
+
+      // Set the target date and time for the second countdown (if needed, adjust this)
+      const countdownTarget2 = new Date("October 1, 2024 17:00:00").getTime();
+
+      const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
 
         // Countdown 1
@@ -1775,12 +1623,12 @@ text.innerHTML = text.innerText
 
         // Stop the first countdown when complete
         if (timeRemaining1 < 0) {
-            clearInterval(countdownInterval);
-            document.querySelector('.days1').innerText = "0";
-            document.querySelector('.hours1').innerText = "0";
-            document.querySelector('.minutes1').innerText = "0";
-            document.querySelector('.seconds1').innerText = "0";
-            document.querySelector('.d-flex').innerText = "Offer Expired";
+          clearInterval(countdownInterval);
+          document.querySelector('.days1').innerText = "0";
+          document.querySelector('.hours1').innerText = "0";
+          document.querySelector('.minutes1').innerText = "0";
+          document.querySelector('.seconds1').innerText = "0";
+          document.querySelector('.d-flex').innerText = "Offer Expired";
         }
 
         // Countdown 2
@@ -1797,37 +1645,24 @@ text.innerHTML = text.innerText
 
         // Stop the second countdown when complete
         if (timeRemaining2 < 0) {
-            clearInterval(countdownInterval);
-            document.querySelector('.days2').innerText = "0";
-            document.querySelector('.hours2').innerText = "0";
-            document.querySelector('.minutes2').innerText = "0";
-            document.querySelector('.seconds2').innerText = "0";
-            document.querySelector('.d-flex').innerText = "Offer Expired";
+          clearInterval(countdownInterval);
+          document.querySelector('.days2').innerText = "0";
+          document.querySelector('.hours2').innerText = "0";
+          document.querySelector('.minutes2').innerText = "0";
+          document.querySelector('.seconds2').innerText = "0";
+          document.querySelector('.d-flex').innerText = "Offer Expired";
         }
 
-    }, 1000);
-}
+      }, 1000);
+    }
     // Start countdown when the page loads
     window.onload = startCountdown;
     // window.onload = startCountdown1;
-    </script>
- 
- 
- <script>
+  </script>
 
-window.addEventListener('load', () => {
-  const preloader = document.getElementById('preloader');
-  const content = document.querySelector('.content');
 
-  // Delay the hiding of the preloader by 5 seconds (5000 milliseconds)
-  setTimeout(() => {
-    if (preloader) preloader.style.display = 'none';
-    if (content) content.style.display = 'block';
-  }, 1000); // 5000 ms = 5 seconds
-});
- </script>
 
-  </body>
+
+</body>
+
 </html>
-
-
