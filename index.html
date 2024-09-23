@@ -1537,10 +1537,16 @@
   <script>
   // Preloader
   document.addEventListener('DOMContentLoaded', function() {
-    const videos = document.querySelectorAll('video');
-    videos.forEach(video => {
-      video.setAttribute('preload', 'auto');
-    });
+    const loadedVideos = new Set();
+
+document.querySelectorAll('video').forEach(video => {
+  video.onloadeddata = () => {
+    if (!loadedVideos.has(video.currentSrc)) {
+      video.play();  // Play only if it's not already loaded
+      loadedVideos.add(video.currentSrc);
+    }
+  };
+});
         const preloader = document.getElementById('preloader');
         // const neonbar=document.getElementsByClassName('neon-bar')
         // const content = document.querySelector('.content');
@@ -1583,16 +1589,7 @@ let anim = setInterval(() => {
    
     });
 
-    const loadedVideos = new Set();
-
-document.querySelectorAll('video').forEach(video => {
-  video.onloadeddata = () => {
-    if (!loadedVideos.has(video.currentSrc)) {
-      video.play();  // Play only if it's not already loaded
-      loadedVideos.add(video.currentSrc);
-    }
-  };
-});
+ 
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
       // Your custom options
