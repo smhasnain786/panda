@@ -1514,15 +1514,27 @@
   
   <script>
   // Preloader
-  window.addEventListener('load', () => {
-      const preloader = document.getElementById('preloader');
-      const content = document.querySelector('.content');
+  document.addEventListener('DOMContentLoaded', function() {
+        const preloader = document.getElementById('preloader');
+        const content = document.querySelector('.content');
 
-      setTimeout(() => {
-          if (preloader) preloader.style.display = 'none';
-          if (content) content.style.display = 'block';
-      }, 1000);
-  });
+        // Function to hide preloader and show content
+        function showContent() {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        }
+
+        // Check if page has finished loading
+        if (document.readyState === 'complete') {
+            showContent();
+        } else {
+            window.addEventListener('load', showContent);
+        }
+
+        // Fallback: If loading takes too long, show content anyway
+        setTimeout(showContent, 3000); // 3 seconds maximum wait time
+    });
+
 
   // Fancybox
   Fancybox.bind("[data-fancybox]", {
