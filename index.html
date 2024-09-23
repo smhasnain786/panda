@@ -35,8 +35,12 @@
 
   </div> -->
   <div class="neon-bar" id="preloader">
-    <progress class='bar' value='0' max='100'></progress>
+    <div>
+<progress class='bar' value='0' max='100'></progress>
     <span class='bar__value'>0%</span>
+    </div>
+    
+    <p class="text-light">Welcome to panda skill school</p>
   </div>
   <div class="circle" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
     <div class="logo"></div>
@@ -1519,6 +1523,10 @@
   <script>
   // Preloader
   document.addEventListener('DOMContentLoaded', function() {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.setAttribute('preload', 'auto');
+    });
         const preloader = document.getElementById('preloader');
         // const neonbar=document.getElementsByClassName('neon-bar')
         // const content = document.querySelector('.content');
@@ -1537,7 +1545,7 @@
         }
 
         // Fallback: If loading takes too long, show content anyway
-        setTimeout(showContent, 3000); // 3 seconds maximum wait time
+        // setTimeout(showContent, 3000);
         const progressBar = document.querySelector(".bar"),
       progressBarValue = document.querySelector('.bar__value');
 let value = 0;
@@ -1558,10 +1566,7 @@ let anim = setInterval(() => {
 
 
 
-        const videos = document.querySelectorAll('video');
-    videos.forEach(video => {
-      video.setAttribute('preload', 'auto');
-    });
+   
     });
 
 
