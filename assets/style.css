@@ -5,7 +5,8 @@
 
 
 }
-.neon-bar{
+
+.neon-bar {
     position: fixed;
     left: 0;
     top: 0;
@@ -17,36 +18,45 @@
     align-items: center;
     z-index: 9999;
 
-  }
-  .bar {
-  -webkit-appearance: none;
-  height: 1.4em;
-  width: 300px;
+}
+
+.bar {
+    -webkit-appearance: none;
+    height: 1.4em;
+    width: 300px;
 }
 
 .bar::-webkit-progress-bar {
-  padding: 0.3em;
-  border-radius: calc(1.4em / 2);
-  background: #1b1b1b;
+    padding: 0.3em;
+    border-radius: calc(1.4em / 2);
+    background: #1b1b1b;
 }
 
 .bar::-webkit-progress-value {
-  background: #03fcc2;
-  box-shadow: 0 0 0.6em #05ffd1, 0 0 0.8em #07ffde;
-  border-radius: calc(1.4em / 2);
+    background: #833ab4;
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
+    box-shadow: 0 0 0.6em #f09433,
+        0 0 0.7em #e6683c,
+        0 0 0.8em #dc2743,
+        0 0 0.9em #cc2366,
+        0 0 1em #bc1888;
+    border-radius: calc(1.4em / 2);
 }
 
 .bar__value {
-  color: #fc0349;
-  font-size: 1.2em;
-  line-height: 1.4em;
-  letter-spacing: 1px;
-  text-shadow: 0 0 0.3em #d00242, 0 0 0.6em #8f001b;
-  margin-left: .5em;
+    color: #fc0349;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    text-shadow: 0 0 0.3em #d00242, 0 0 0.6em #8f001b;
+    margin-left: .5em;
 }
-.redirect-link:hover{
-color: rgba(255, 255, 255, 0.743) !important;
+
+.redirect-link:hover {
+    color: rgba(255, 255, 255, 0.743) !important;
 }
+
 .fancybox__content {
     width: 100% !important;
     height: auto !important;
@@ -837,7 +847,7 @@ ul {
 
 
     }
-  
+
     .text {
         height: 86px !important;
         width: 86px !important;
@@ -936,9 +946,7 @@ ul {
         font-size: 36px !important;
     }
 
-    .video-container {
-      
-    }
+    .video-container {}
 
     .accordion {
         border-radius: 1px !important;
@@ -1324,7 +1332,7 @@ ul {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
-    
+
 
     .hero-text {
         font-size: 100px !important;
@@ -1522,16 +1530,17 @@ ul {
     .course-card-button>span {
         font-size: 15px !important;
     }
-    .course-card-container{
-        max-height: 645px!important;
-       }
-    
+
+    .course-card-container {
+        max-height: 645px !important;
+    }
+
 }
 
 @media only screen and (min-width: 1399.99px) and (max-width: 1786px) {
-   .course-card-container{
-    max-height: 686px!important;
-   }
+    .course-card-container {
+        max-height: 686px !important;
+    }
 
     .hero-text {
         font-size: 72px !important;
