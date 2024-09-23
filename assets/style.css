@@ -5,7 +5,9 @@
 
 
 }
-
+.redirect-link:hover{
+color: rgba(255, 255, 255, 0.743) !important;
+}
 .fancybox__content {
     width: 100% !important;
     height: auto !important;
@@ -143,14 +145,14 @@ ul {
 
 }
 
-.rows>li>img:hover {
+.rows>li>video:hover {
     filter: brightness(1.3) saturate(1.3);
     opacity: 1;
     will-change: auto;
     transition: none;
 }
 
-.rows1>li>img:hover {
+.rows1>li>video:hover {
     filter: brightness(1.3) saturate(1.3);
     opacity: 1;
     will-change: auto;
@@ -207,7 +209,7 @@ ul {
 
 
 
-.rows>li>img {
+.rows>li>video {
     border-radius: 5%;
     height: 223px;
     filter: brightness(1) saturate(1);
@@ -216,7 +218,7 @@ ul {
     transition: filter 8s ease, opacity 4s ease;
 }
 
-.rows1>li>img {
+.rows1>li>video {
     border-radius: 5%;
     height: 223px;
     filter: brightness(1) saturate(1);
@@ -419,7 +421,7 @@ ul {
     margin-bottom: 10px
 }
 
-.img-li>img {
+.img-li>video {
     width: 221px;
     height: auto !important
 }
@@ -434,7 +436,7 @@ ul {
     background-position: 73px -106px;
     background-image: url(../assets/images/Panda\ for\ website.png);
     background-size: 705px;
-
+    background-repeat: no-repeat;
 }
 
 .gradient {
@@ -470,8 +472,8 @@ ul {
 }
 
 #Enrol-btn:hover {
-    background:linear-gradient(to right,
-    #72329d, #d41919, #d3943b) !important;
+    background: linear-gradient(to right,
+            #72329d, #d41919, #d3943b) !important;
     color: #ffffff;
     cursor: pointer !important;
 }
@@ -562,9 +564,10 @@ ul {
     justify-content: center;
     pointer-events: none;
 }
+
 .play-button:hover {
-    background:linear-gradient(to right,
-    #72329d, #d41919, #d3943b) !important;
+    background: linear-gradient(to right,
+            #72329d, #d41919, #d3943b) !important;
     color: #ffffff;
     cursor: pointer !important;
 }
@@ -612,9 +615,10 @@ ul {
     border: none !important;
     border-radius: 15px !important;
 }
+
 .course-card-button:hover {
-    background:linear-gradient(to right,
-    #72329d, #d41919, #d3943b) !important;
+    background: linear-gradient(to right,
+            #72329d, #d41919, #d3943b) !important;
     color: #ffffff;
     cursor: pointer !important;
 }
@@ -622,7 +626,7 @@ ul {
 .course-card-button-text {
     font-size: 30px;
     font-weight: 700;
-    
+
 }
 
 .accordion {
@@ -697,9 +701,10 @@ ul {
     border: none !important;
     border-radius: 15px !important;
 }
+
 .enrol-now-card-button:hover {
-    background:linear-gradient(to right,
-    #72329d, #d41919, #d3943b) !important;
+    background: linear-gradient(to right,
+            #72329d, #d41919, #d3943b) !important;
     color: #ffffff;
     cursor: pointer !important;
 }
@@ -773,13 +778,15 @@ ul {
     background: transparent !important;
     color: white !important;
 }
+
 .timer-join-now:hover {
     background-color: white !important;
-    color: #FF5733 !important; /* Set this to the background color you want when text turns transparent */
+    color: #FF5733 !important;
+    /* Set this to the background color you want when text turns transparent */
     border-color: white !important;
-    
+
     cursor: pointer;
-   
+
 }
 
 /* Extra small devices (phones, 0px and up) */
@@ -1274,6 +1281,7 @@ ul {
 }
 
 
+
 /* Extra large devices (large desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) and (max-width: 1399.98px) {
     .hero-container {
@@ -1285,6 +1293,348 @@ ul {
         line-height: 100px !important;
 
 
+    }
+
+    .course-curri-card-text {
+        font-size: 25px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 36%;
+    }
+
+    .hero-text-div>p {
+        font-size: 20px !important;
+    }
+
+    #Enrol-btn {
+        width: 50% !important;
+        height: 8% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+
+
+    .slide-image {
+        width: 100% !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: 50% -41%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 23% !important;
+        left: 0% !important;
+        gap: 33px;
+    }
+
+    .eye {
+        position: relative;
+        width: 57px !important;
+        height: 57px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: 35px !important;
+        height: 35px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .list-group-item {
+        font-size: 15px !important;
+    }
+
+    .course-card-button>span {
+        font-size: 15px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .hero-container {
+        height: 100% !important;
+    }
+
+    .hero-text {
+        font-size: 100px !important;
+        line-height: 100px !important;
+
+
+    }
+
+    .course-curri-card-text {
+        font-size: 25px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 36%;
+    }
+
+    .hero-text-div>p {
+        font-size: 20px !important;
+    }
+
+    #Enrol-btn {
+        width: 50% !important;
+        height: 8% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+
+
+    .slide-image {
+        width: 100% !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: 50% -41%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 23% !important;
+        left: 0% !important;
+        gap: 33px;
+    }
+
+    .eye {
+        position: relative;
+        width: 57px !important;
+        height: 57px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: 35px !important;
+        height: 35px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .list-group-item {
+        font-size: 15px !important;
+    }
+
+    .course-card-button>span {
+        font-size: 15px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1399.99px) and (max-width: 1786px) {
+    .hero-container {
+        height: 120% !important;
+
+    }
+
+    .hero-text {
+        font-size: 72px !important;
+        line-height: 80px !important;
+        width: 45% !important;
+        text-align: center !important;
+
+
+    }
+
+    .course-curri-card-text {
+        font-size: 25px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-text-div {
+        position: absolute;
+        /* top: 60% !important; */
+        transform: none;
+        left: 0%;
+        width: 100%;
+        padding: 20px !important;
+        height: 100%;
+        top: 30%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #hero-para {
+        margin: 0px !important;
+        font-size: 16px !important;
+    }
+
+    #hero-para1 {
+        margin: 10px !important;
+        font-size: 16px !important;
+        width: 600px !important;
+    }
+
+    .hero-text-div>p {
+        font-size: 20px !important;
+    }
+
+    .Enrol-btn-div {
+        width: 230px !important;
+
+    }
+
+    #Enrol-btn-div {
+        margin-top: 10px !important;
+    }
+
+    #Enrol-btn {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .overlay {
+        width: 100% !important;
+        left: 0px !important;
+    }
+
+    .strip-container {
+        height: 30px !important;
+    }
+
+    .strip-container li {
+        font-size: 20px !important;
+    }
+
+    .slide-image {
+        width: 100% !important;
+    }
+
+    .panda-container {
+        left: 0%;
+        background-size: 535px;
+        background-repeat: no-repeat;
+        background-position: 50% -41%;
+        width: 100% !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .face1 {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .eyes {
+        position: relative !important;
+        top: 15% !important;
+        left: 0% !important;
+        gap: 33px;
+    }
+
+    .eye {
+        position: relative;
+        width: 57px !important;
+        height: 57px !important;
+        display: block;
+        background: #fff;
+        margin: 0 15px;
+        border-radius: 5%;
+    }
+
+    .eyes .eye::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: 35px !important;
+        height: 35px !important;
+        background: #333;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .list-group-item {
+        font-size: 15px !important;
+    }
+
+    .course-card-button>span {
+        font-size: 15px !important;
+    }
+
+}
+
+@media only screen and (min-height: 625px) and (max-height: 840px) and (min-width:1564px) {
+    .hero-container {
+        height: 100% !important;
+    }
+
+    .hero-text {
+        font-size: 50px !important;
+        line-height: 100px !important;
+
+
+    }
+
+    .overlay {
+        height: 100% !important;
     }
 
     .course-curri-card-text {
