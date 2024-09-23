@@ -449,7 +449,7 @@
               <div class="video-thumbnail-wrapper">
                 <img
                   class="trailer-video"
-                  src="assets/images/thumbnailforwebsit (1).jpeg"
+                  src="assets/images/thumbnailforwebsit (1).webp"
                   alt="Video Thumbnail"
                   class="trailer-video-thumbnail"
                 />
@@ -715,7 +715,7 @@
               <div class="card-body">
                 <img
                   style="width: 100%; border-radius: 20px"
-                  src="assets/images/thumbnailforwebsit (1).jpeg"
+                  src="assets/images/thumbnailforwebsit (1).webp"
                   alt=""
                 />
                 <h1
@@ -1816,12 +1816,12 @@ text.innerHTML = text.innerText
  
  <script>
 
-   window.addEventListener('load', function() {
-  // Hide preloader
-  document.getElementById('preloader').style.display = 'none';
-  
-  // Show main content
-  document.querySelector('.content').style.display = 'block';
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  const content = document.querySelector('.content');
+
+  if (preloader) preloader.style.display = 'none';
+  if (content) content.style.display = 'block';
 });
  </script>
 
