@@ -1,2 +1,10 @@
+# Enable cache for video files (.webm and .mp4)
+<FilesMatch "\.(webm|mp4)$">
+    Header set Cache-Control "public, max-age=31536000"
+</FilesMatch>
+
+# Enable RewriteEngine for custom URL handling
 RewriteEngine On
+
+# Rewrite rule to serve the thanks.html page when accessing /thanks
 RewriteRule ^thanks$ /thanks.html [L]
