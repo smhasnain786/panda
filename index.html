@@ -1819,8 +1819,11 @@ window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   const content = document.querySelector('.content');
 
-  if (preloader) preloader.style.display = 'none';
-  if (content) content.style.display = 'block';
+  // Delay the hiding of the preloader by 5 seconds (5000 milliseconds)
+  setTimeout(() => {
+    if (preloader) preloader.style.display = 'none';
+    if (content) content.style.display = 'block';
+  }, 1000); // 5000 ms = 5 seconds
 });
  </script>
 
