@@ -1513,11 +1513,21 @@ window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   const content = document.querySelector('.content');
 
-  // Ensure the loader is visible for at least 1 second
+  // Mark the time the page has loaded
+  const pageLoadedAt = performance.now();
+
+  // Ensure at least 1 second (1000 ms) passes before hiding the loader
+  const displayDuration = 1000; // 1 second
+
+  // Calculate how long to wait after the page loads
+  const timeSincePageLoad = performance.now() - pageLoadedAt;
+  const remainingTime = Math.max(displayDuration - timeSincePageLoad, 0);
+
+  // Ensure the loader is shown for at least 1 second
   setTimeout(() => {
     if (preloader) preloader.style.display = 'none';
     if (content) content.style.display = 'block';
-  }, 1000); // 1000 ms = 1 second
+  }, remainingTime);
 });
 
 
