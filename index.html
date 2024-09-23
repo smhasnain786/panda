@@ -28,11 +28,15 @@
 </head>
 
 <body style="margin: 0px; padding: 0px">
-  <div id="preloader">
+  <!-- <div id="preloader">
     <video style="width: 200px;" autoplay loop muted>
       <source src="assets/images/ezgif-2-5566b09878.webm" type="video/webm">
     </video>
 
+  </div> -->
+  <div class="neon-bar" id="preloader">
+    <progress class='bar' value='0' max='100'></progress>
+    <span class='bar__value'>0%</span>
   </div>
   <div class="circle" onclick="window.location.href='https://rzp.io/l/payment-for-workshop'">
     <div class="logo"></div>
@@ -428,7 +432,7 @@
           <a data-fancybox href="https://www.youtube.com/watch?v=ScMzIvxBSi4" class="trailer-link">
             <div class="video-thumbnail-wrapper">
               <img class="trailer-video" src="assets/images/thumbnailforwebsit (1).webp" alt="Video Thumbnail"
-                class="trailer-video-thumbnail" />
+                class="trailer-video-thumbnail" loading="lazy" />
               <div class="play-button"></div>
             </div>
           </a>
@@ -1516,12 +1520,13 @@
   // Preloader
   document.addEventListener('DOMContentLoaded', function() {
         const preloader = document.getElementById('preloader');
-        const content = document.querySelector('.content');
-
+        // const neonbar=document.getElementsByClassName('neon-bar')
+        // const content = document.querySelector('.content');
+        
         // Function to hide preloader and show content
         function showContent() {
-            preloader.style.display = 'none';
-            content.style.display = 'block';
+          preloader.style.display = 'none';
+            // content.style.display = 'block';
         }
 
         // Check if page has finished loading
@@ -1533,6 +1538,30 @@
 
         // Fallback: If loading takes too long, show content anyway
         setTimeout(showContent, 3000); // 3 seconds maximum wait time
+        const progressBar = document.querySelector(".bar"),
+      progressBarValue = document.querySelector('.bar__value');
+let value = 0;
+const max = 100;
+
+let anim = setInterval(() => {
+  if (value == max) {
+    clearInterval(anim);
+    showContent()
+  } else {
+    value += 1;
+    progressBar.value = value;
+    progressBarValue.innerText = value + '%';
+  }
+}, 100);
+
+
+
+
+
+        const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.setAttribute('preload', 'auto');
+    });
     });
 
 
@@ -1650,7 +1679,7 @@
   }
 
   // Start countdown when the page loads
-  window.addEventListener('load', startCountdown);
+  startCountdown()
   </script>
 </body>
 
